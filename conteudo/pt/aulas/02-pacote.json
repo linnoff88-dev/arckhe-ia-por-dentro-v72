@@ -1,0 +1,285 @@
+{
+  "slug": "pacote",
+  "num": 2,
+  "menu": "Pacote",
+  "titulo": "Etapa 1: sua mensagem é empacotada",
+  "titulo_curto": "1 · Empacotada",
+  "minutos": 14,
+  "lead": "O ChatGPT não é o modelo de IA: é um aplicativo em volta dele. Quando você aperta enviar, o app junta à sua frase um monte de coisa, toda vez. Entender esse pacote explica por que conversa longa piora a resposta.",
+  "objetivo": "listar o que o app junta à sua mensagem e reconhecer quando a conversa ficou longa demais.",
+  "competencias": [
+    "separar-app-e-modelo",
+    "reconhecer-contexto-longo"
+  ],
+  "aprende": [
+    {
+      "t": "A diferença entre o app e o modelo"
+    },
+    {
+      "t": "As cinco peças que vão junto com a sua frase"
+    },
+    {
+      "t": "Por que o modelo precisa receber a conversa inteira a cada envio"
+    },
+    {
+      "t": "O que é context rot, o contexto apodrecendo"
+    }
+  ],
+  "hero_alt": "Caixa de vidro sendo enchida de folhas, caderno, pasta e um rolo de papel que escorre até o chão.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "O que vai dentro do pacote",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Você",
+          "sub": "uma frase",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "\"escreva um e-mail\""
+            }
+          ],
+          "detalhe": "Você escreve poucas palavras e aperta enviar. É a menor parte do que o modelo vai receber."
+        },
+        {
+          "icone": "chat",
+          "titulo": "O app",
+          "sub": "ChatGPT, Claude…",
+          "detalhe": "O aplicativo em volta do modelo. É ele que monta o pacote antes de mandar. O modelo em si só recebe texto e devolve texto."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "O pacote",
+          "sub": "tudo junto",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Prompt de sistema",
+              "sub": "regras da empresa"
+            },
+            {
+              "icone": "caneta",
+              "t": "Suas instruções"
+            },
+            {
+              "icone": "memoria",
+              "t": "Memórias salvas"
+            },
+            {
+              "icone": "pasta",
+              "t": "Arquivos anexados"
+            },
+            {
+              "icone": "fila",
+              "t": "A conversa inteira"
+            }
+          ],
+          "detalhe": "O prompt de sistema vem primeiro: são as instruções da própria empresa. A Anthropic publica o do Claude, que passa de três mil palavras e começa pela data de hoje, porque o modelo sozinho não sabe que dia é. Depois vêm as suas instruções, as memórias, os arquivos e a conversa inteira."
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "O modelo",
+          "sub": "sem memória",
+          "detalhe": "O modelo não lembra de nada entre um envio e outro. Para seguir o assunto, cada envio carrega cada caractere que você já escreveu na conversa."
+        }
+      ],
+      "legenda": "Toda vez que você envia, o pacote é montado de novo, com a conversa até ali.",
+      "dica": "Clique em cada bloco do diagrama para ver o que ele faz."
+    },
+    {
+      "tipo": "simpacote",
+      "titulo": "Monte o pacote e veja o tamanho",
+      "sub": "Ligue e desligue as peças. Depois envie mais mensagens na mesma conversa.",
+      "mensagem": "Escreva um e-mail para o meu chefe",
+      "pecas": [
+        {
+          "t": "Prompt de sistema",
+          "sub": "regras da empresa, começa pela data",
+          "palavras": 3000,
+          "fixo": true
+        },
+        {
+          "t": "Suas instruções",
+          "sub": "o que você configurou no app",
+          "palavras": 150
+        },
+        {
+          "t": "Memórias salvas",
+          "sub": "o que o app guardou sobre você",
+          "palavras": 300
+        },
+        {
+          "t": "Arquivo anexado",
+          "sub": "um PDF de poucas páginas",
+          "palavras": 2000,
+          "ligado": false
+        },
+        {
+          "t": "A conversa até aqui",
+          "sub": "cresce a cada envio",
+          "conversa": true
+        }
+      ],
+      "conversa": {
+        "por_envio": 400
+      },
+      "limite": 9000,
+      "rot": {
+        "sua": "Sua mensagem:",
+        "pacote": "O que o modelo recebe",
+        "total": "Você escreveu <b>{s}</b> palavras. O modelo recebe <b>{p}</b>.",
+        "envios": "Mensagens enviadas nesta conversa: {n}",
+        "enviar": "Enviar mais uma mensagem",
+        "zerar": "Conversa nova"
+      },
+      "msg": {
+        "inicio": "Primeira mensagem: a conversa ainda está vazia, mas o prompt de sistema já vai junto.",
+        "cresce": "A conversa anterior volta inteira em cada envio. Continue enviando e veja a barra crescer.",
+        "aviso": "Pacote grande: o modelo faz contas em cima de tudo isso e a resposta fica menos confiável. Hora de abrir uma conversa nova com um resumo."
+      },
+      "legenda": "Medido: o prompt de sistema do Claude passa de três mil palavras. Ilustrativo: os outros tamanhos e o ponto do aviso, só para ver a proporção."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O contexto apodrece",
+      "sub": "Por que conversa longa piora a resposta. Clique em cada etapa.",
+      "passos": [
+        {
+          "titulo": "Texto gigante",
+          "sub": "conversa longa",
+          "texto": [
+            "Cada envio carrega a conversa inteira. Depois de muitas mensagens, o pacote vira um texto enorme, com muitos tokens."
+          ],
+          "exemplo": {
+            "rot": "Na prática",
+            "texto": "A 40ª mensagem leva junto as 39 anteriores."
+          }
+        },
+        {
+          "titulo": "Mais contas",
+          "sub": "precisão cai",
+          "texto": [
+            "O modelo faz contas cada vez mais complicadas em cima de tudo isso.",
+            "Cada conta intermediária perde um pouquinho de precisão."
+          ]
+        },
+        {
+          "titulo": "Qualidade cai",
+          "sub": "context rot",
+          "texto": [
+            "Somando tudo, quanto maior a entrada, menos confiável a resposta. As pesquisas mostram a curva caindo conforme o texto cresce.",
+            "O nome disso é <b>context rot</b>, o contexto apodrecendo."
+          ],
+          "exemplo": {
+            "rot": "O que fazer",
+            "texto": "Conversa longa? Abra uma nova e cole um resumo. É a dica 1 da aula 8."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Veja o seu pacote",
+      "sub": "Cole no app que você usa. A resposta mostra parte do que vai junto com cada mensagem.",
+      "blocos": [
+        {
+          "rot": "Prompt · o que vai junto",
+          "icone": "chat",
+          "conteudo": "Antes de responder qualquer coisa, me diga em tópicos curtos:\n1. Que dia é hoje, segundo as informações que você recebeu?\n2. Quais instruções personalizadas minhas você está seguindo?\n3. O que você tem salvo na memória sobre mim?\nSe não houver nada em algum item, diga \"nada\"."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>A data que ele disse bate com a de hoje: veio do prompt de sistema.</li><li>Abra as configurações do app e ache onde ficam as instruções e a memória.</li><li>Compare com o que ele listou.</li></ol>"
+          },
+          {
+            "rot": "Erro comum",
+            "html": "<p>Achar que o modelo \"lembra\" de você. Quem lembra é o app, que guarda as memórias e as coloca no pacote a cada envio.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: abra o seu pacote",
+      "sub": "No app de IA que você mais usa.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · O que vai junto",
+          "min": "10 min",
+          "texto": "Cole o prompt acima numa conversa nova. Depois abra as configurações do app e ache as telas de instruções personalizadas e de memória.",
+          "pronto": "você anotou a data que ele informou e achou nas configurações onde ligar e desligar a memória."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Leia um prompt de sistema de verdade",
+          "min": "15 min",
+          "texto": "Abra a página em que a Anthropic publica os prompts de sistema do Claude (link no fim da aula) e leia o começo de um deles.",
+          "pronto": "você achou a data logo no início e anotou duas regras que a empresa dá ao modelo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Por que o prompt de sistema do Claude começa pela data de hoje?",
+          "opcoes": [
+            "Para registrar no histórico o dia e a hora em que a conversa começou.",
+            "Por exigência legal.",
+            "Para o app cobrar por dia de uso.",
+            "Porque o modelo sozinho não sabe que dia é."
+          ],
+          "certa": 3,
+          "explica": "O modelo não tem relógio nem calendário; ele só trabalha com o texto que recebe. Se a data não vier no pacote, ele não sabe.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Você está na 40ª mensagem de uma conversa. O que o modelo recebe?",
+          "opcoes": [
+            "Só a 40ª mensagem.",
+            "A 40ª mensagem e um resumo automático e curto das 39 mensagens anteriores.",
+            "A conversa inteira, da 1ª à 40ª, mais as outras peças.",
+            "Só as últimas cinco mensagens."
+          ],
+          "certa": 2,
+          "explica": "O modelo não tem memória: para seguir o assunto, cada envio carrega a conversa inteira. É por isso que conversa longa fica pesada.",
+          "ref": "simpacote"
+        },
+        {
+          "p": "O que é context rot?",
+          "opcoes": [
+            "A resposta ficar menos confiável quando a entrada cresce demais.",
+            "O app apagar conversas antigas.",
+            "Um vírus que corrompe o histórico.",
+            "O modelo esquecer a data."
+          ],
+          "certa": 0,
+          "explica": "Com entrada muito longa, o modelo faz mais contas e cada uma perde um pouco de precisão. A qualidade cai: o contexto apodrece.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Os prompts de sistema do Claude, publicados pela Anthropic",
+          "href": "https://docs.claude.com/en/release-notes/system-prompts",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "slug": "dicas",
+  "num": 8,
+  "menu": "5 dicas",
+  "titulo": "O que fazer com isso: 5 hábitos que melhoram as respostas",
+  "titulo_curto": "As 5 dicas",
+  "minutos": 18,
+  "lead": "Cada etapa que você abriu explica um comportamento da IA. Aqui elas viram cinco hábitos, cada um com um modelo de prompt para copiar e uma prática para fazer hoje. Quem entende o motor dirige melhor.",
+  "objetivo": "aplicar os 5 hábitos no seu uso diário, com um prompt pronto para cada um e uma prática conferida.",
+  "competencias": [
+    "resumir-e-recomecar-conversa",
+    "escrever-instrucoes-curtas",
+    "pedir-busca-com-fonte",
+    "conferir-resposta-confiante"
+  ],
+  "aprende": [
+    {
+      "t": "Quando abrir conversa nova e como levar o resumo"
+    },
+    {
+      "t": "Por que instruções curtas valem mais"
+    },
+    {
+      "t": "Busca com fonte para fato atual; ferramenta para conta"
+    },
+    {
+      "t": "Tratar resposta confiante como hipótese"
+    }
+  ],
+  "hero_alt": "Pessoa de costas diante de dois monitores com uma janela de chat e resultados de busca desfocados.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cada hábito nasce de uma etapa",
+      "sub": "Clique em cada hábito.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Resumo",
+          "sub": "etapa 1",
+          "detalhe": "Conversa ficou longa? Abra uma nova e cole um resumo. Você foge do contexto apodrecendo (aula 2)."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Instruções",
+          "sub": "etapa 1",
+          "detalhe": "Instruções personalizadas curtas e claras: elas vão junto em todo envio, dentro do pacote (aula 2)."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Fonte",
+          "sub": "etapa 7",
+          "forte": true,
+          "detalhe": "Fato ou número atual: peça para a IA buscar na web e mostrar a fonte. Sem busca, ela completa com o mais provável (aulas 6 e 7)."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Ferramenta",
+          "sub": "etapas 3 e 7",
+          "detalhe": "Conta importante: peça para usar ferramenta (calculadora, código) ou confira você. Números chegam picados ao modelo (aula 4)."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Dúvida",
+          "sub": "etapa 6",
+          "detalhe": "Resposta confiante não é resposta certa: é só a mais provável. Fato que importa, você confere (aula 6)."
+        }
+      ],
+      "legenda": "Cinco hábitos, cinco etapas por trás."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Os 5 modelos de prompt",
+      "sub": "Copie, troque o que está entre os sinais < > e use.",
+      "blocos": [
+        {
+          "rot": "Dica 1 · resumo para conversa nova",
+          "icone": "chat",
+          "conteudo": "Esta conversa ficou longa. Faça um resumo para eu colar numa conversa nova:\n- objetivo do trabalho;\n- decisões já tomadas;\n- o que ainda falta;\n- dados e nomes que não podem se perder.\nNo máximo 15 linhas."
+        },
+        {
+          "rot": "Dica 2 · instruções personalizadas curtas",
+          "icone": "caneta",
+          "conteudo": "Sou <sua profissão> e uso a IA para <seu uso principal>.\nResponda em português, frases curtas, em tópicos quando couber.\nQuando não tiver certeza, diga.\nPara fato atual, busque e mostre a fonte."
+        },
+        {
+          "rot": "Dica 3 · fato atual com fonte",
+          "icone": "lupa",
+          "conteudo": "Pesquise na web e responda: <sua pergunta>\nMostre o link e a data de cada fonte. Se não achar, diga que não achou."
+        },
+        {
+          "rot": "Dica 4 · conta com ferramenta",
+          "icone": "grafico",
+          "conteudo": "Calcule <sua conta> usando a ferramenta de código ou de cálculo, não de cabeça.\nMostre a conta passo a passo e o resultado final."
+        },
+        {
+          "rot": "Dica 5 · resposta confiante sob suspeita",
+          "icone": "alvo",
+          "conteudo": "Revise a sua resposta anterior.\nComece cada linha com \"Mas\" e procure um ponto que pode estar errado.\nNo fim, diga o que eu devo conferir numa fonte oficial."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Quando usar",
+            "html": "<ul><li><b>Dica 1</b>: a conversa passou de muitas mensagens ou a IA começou a esquecer o combinado.</li><li><b>Dica 2</b>: uma vez, nas configurações do app.</li><li><b>Dica 3</b>: qualquer número, data ou fato recente.</li><li><b>Dica 4</b>: conta que vai para documento, orçamento ou decisão.</li><li><b>Dica 5</b>: resposta que você vai usar sem outra conferência.</li></ul>"
+          },
+          {
+            "rot": "Erro comum",
+            "html": "<p>Escrever instruções enormes \"para garantir\". Elas vão em todo envio e engordam o pacote: curto e claro funciona melhor.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: os 5 hábitos na sua semana",
+      "sub": "Um por dia, no app que você usa. Só passe para o próximo quando o \"pronto quando\" for verdade.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Conversa nova com resumo",
+          "min": "10 min",
+          "texto": "Pegue a sua conversa mais longa, peça o resumo com o modelo da dica 1 e cole numa conversa nova.",
+          "pronto": "a conversa nova continuou o trabalho sem você repetir o que já tinha sido decidido."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Instruções curtas",
+          "min": "10 min",
+          "texto": "Reescreva as suas instruções personalizadas com o modelo da dica 2.",
+          "pronto": "as instruções salvas no app têm no máximo 6 linhas."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Fato com fonte",
+          "min": "10 min",
+          "texto": "Use o modelo da dica 3 com uma pergunta sobre algo desta semana.",
+          "pronto": "você abriu um dos links e achou nele o fato citado."
+        },
+        {
+          "id": "e4",
+          "titulo": "E4 · Conta com ferramenta",
+          "min": "10 min",
+          "texto": "Use o modelo da dica 4 com uma conta real (juros, orçamento, divisão de despesas) e confira numa calculadora.",
+          "pronto": "o resultado da IA e o da sua calculadora são iguais."
+        },
+        {
+          "id": "e5",
+          "titulo": "E5 · A resposta sob suspeita",
+          "min": "10 min",
+          "texto": "Depois de uma resposta importante, use o modelo da dica 5.",
+          "pronto": "você conferiu numa fonte oficial o ponto que a revisão apontou e anotou se estava certo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "A conversa ficou enorme e a IA começou a esquecer o combinado. O que fazer?",
+          "opcoes": [
+            "Repetir tudo o que foi combinado, na mesma conversa, em letras maiúsculas.",
+            "Mandar a mesma pergunta várias vezes até ela lembrar sozinha.",
+            "Trocar de idioma.",
+            "Pedir um resumo e colar numa conversa nova."
+          ],
+          "certa": 3,
+          "explica": "Conversa longa vira pacote gigante e a qualidade cai (context rot). O resumo numa conversa nova leva o essencial sem o peso.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Por que instruções personalizadas devem ser curtas?",
+          "opcoes": [
+            "Porque vão junto em todo envio, dentro do pacote.",
+            "Porque o app cobra cada palavra das instruções na sua fatura do mês.",
+            "Porque o classificador de segurança barra instruções com mais de dez linhas.",
+            "Porque o modelo só lê a primeira linha."
+          ],
+          "certa": 0,
+          "explica": "As instruções entram no pacote de toda mensagem. Curtas e claras ajudam sem engordar o que o modelo precisa processar.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Você precisa do valor de um índice divulgado ontem. Qual pedido é o melhor?",
+          "opcoes": [
+            "\"Qual é o valor?\", sem mais nada.",
+            "\"Pesquise na web e mostre o link e a data da fonte.\"",
+            "\"Responda com toda a certeza e sem dizer que não sabe.\"",
+            "\"Use a sua memória e o que você aprendeu no treino.\""
+          ],
+          "certa": 1,
+          "explica": "Fato atual pede busca com fonte. Sem ferramenta, o modelo completa com o mais provável, e pedir \"certeza\" não muda o cálculo.",
+          "ref": "codigo"
+        },
+        {
+          "p": "A IA respondeu uma conta com muita segurança. O que isso garante?",
+          "opcoes": [
+            "Que a conta está certa, porque o modelo só fala assim quando sabe.",
+            "Que ela usou a calculadora do data center para chegar ao número.",
+            "Nada: é só a resposta mais provável; confira ou peça ferramenta.",
+            "Que o resultado veio do data center mais rápido, com a GPU mais nova."
+          ],
+          "certa": 2,
+          "explica": "Tom confiante não é prova. Números chegam picados ao modelo e ele escolhe o mais provável. Conta importante: ferramenta ou conferência.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "As 7 etapas e os 5 hábitos",
+      "itens": [
+        {
+          "t": "Pacote (etapa 1)",
+          "texto": "Conversa nova com resumo; instruções curtas."
+        },
+        {
+          "t": "Tokens (etapa 3)",
+          "texto": "Números chegam picados: conta com ferramenta."
+        },
+        {
+          "t": "Um token por vez (etapa 6)",
+          "texto": "Provável não é certo: resposta confiante, você confere."
+        },
+        {
+          "t": "Decisão (etapa 7)",
+          "texto": "Fato atual: peça busca e fonte, e abra o link."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Próximo passo: Do chat ao agente, curso grátis",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "seta"
+        },
+        {
+          "t": "Guia: como aprender inteligência artificial",
+          "href": "https://www.inema.club/aprender-inteligencia-artificial/",
+          "icone": "lista"
+        }
+      ]
+    }
+  ]
+}

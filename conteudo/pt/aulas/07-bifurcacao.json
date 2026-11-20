@@ -1,0 +1,211 @@
+{
+  "slug": "bifurcacao",
+  "num": 7,
+  "menu": "Decisão",
+  "titulo": "Etapa 7: parar, raciocinar ou usar uma ferramenta",
+  "titulo_curto": "7 · A decisão",
+  "minutos": 15,
+  "lead": "Desde 2023, depois de gerar um trecho, o modelo decide entre três caminhos: parar, raciocinar mais ou usar uma ferramenta. É assim que a IA de hoje confere a si mesma e busca fato atual, em vez de só adivinhar o próximo pedaço.",
+  "objetivo": "distinguir os três caminhos da bifurcação e pedir uma busca com fonte que você consegue conferir.",
+  "competencias": [
+    "explicar-raciocinio-do-modelo",
+    "usar-ferramenta-de-busca"
+  ],
+  "aprende": [
+    {
+      "t": "Os três caminhos depois de cada trecho"
+    },
+    {
+      "t": "Como o raciocínio escondido usa \"mas\" e \"porém\" para se conferir"
+    },
+    {
+      "t": "O que é uma ferramenta e quem de fato busca na web"
+    },
+    {
+      "t": "Como pedir uma busca e conferir a fonte"
+    }
+  ],
+  "hero_alt": "Linha de luz que se divide em três: uma termina numa barreira, outra dá uma volta, a terceira chega a uma caixa de ferramentas.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A bifurcação",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {
+          "icone": "fila",
+          "titulo": "Trecho",
+          "sub": "acabou de sair",
+          "detalhe": "O modelo gerou um trecho, token por token, como na aula 6. Agora decide o que fazer."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Decisão",
+          "sub": "três caminhos",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Parar",
+              "sub": "entrega a resposta"
+            },
+            {
+              "icone": "cerebro",
+              "t": "Raciocinar",
+              "sub": "pensa mais, escondido"
+            },
+            {
+              "icone": "lupa",
+              "t": "Usar ferramenta",
+              "sub": "busca, conta, código…"
+            }
+          ],
+          "detalhe": "Parar é entregar. Raciocinar é devolver a própria resposta como entrada, numa área escondida, cinco, cem, até mil vezes. Usar ferramenta é chamar um programa."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Ferramenta",
+          "sub": "um programa",
+          "detalhe": "Busca, calculadora, código, agenda, e-mail, arquivos. O programa recebe texto e faz alguma coisa. Quem busca é o programa; o modelo só chama."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Resultado",
+          "sub": "volta ao modelo",
+          "detalhe": "O resultado volta para o texto, e o modelo decide de novo: parar, pensar mais ou usar outra ferramenta. Gira assim até ficar satisfeito."
+        }
+      ],
+      "volta": "Com o resultado na mão, o modelo decide de novo",
+      "legenda": "Essa volta inteira, das sete etapas, acontece em poucos segundos."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Os dois caminhos que não são parar",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {
+          "titulo": "Raciocinar",
+          "sub": "cadeia de pensamento",
+          "texto": [
+            "O modelo devolve a própria resposta como entrada, numa área escondida, e passa por ela várias vezes antes de te mostrar.",
+            "É a cadeia de pensamento."
+          ]
+        },
+        {
+          "titulo": "Mas, porém",
+          "sub": "conferir a si mesmo",
+          "texto": [
+            "Nessa área aparecem palavras como \"mas\", \"porém\" e \"também\" no começo das linhas.",
+            "Como o modelo segue o caminho mais provável, começar com \"mas\" empurra ele a procurar um contraexemplo para o que acabou de dizer. É assim que ele se confere."
+          ]
+        },
+        {
+          "titulo": "Ferramenta",
+          "sub": "busca na web",
+          "texto": [
+            "Uma busca na web tem dois campos: o site e o período. O modelo preenche os dois.",
+            "O programa consulta um buscador e devolve uma lista de resultados. O modelo lê e decide de novo."
+          ],
+          "exemplo": {
+            "rot": "Quem faz o quê",
+            "texto": "Quem busca é o programa, não o modelo. O modelo só chama."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "A chamada de ferramenta e o seu pedido",
+      "sub": "Primeiro, como fica uma chamada de busca; depois, o prompt da prática.",
+      "blocos": [
+        {
+          "rot": "Exemplo · chamada de busca (ilustrativa)",
+          "icone": "lupa",
+          "conteudo": "ferramenta: busca_web\nconsulta:   inflação oficial do último mês no Brasil\nsite:       ibge.gov.br\nperíodo:    últimos 30 dias"
+        },
+        {
+          "rot": "Prompt · busca com fonte",
+          "icone": "chat",
+          "conteudo": "Pesquise na web e responda: <sua pergunta sobre um fato atual>\nRegras:\n- use só fontes oficiais ou de imprensa conhecida;\n- mostre o link de cada fonte e a data da publicação;\n- se não achar, diga que não achou, sem chutar."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>A resposta trouxe links (se não trouxe, o app pode estar sem busca ligada: procure a opção de busca na web).</li><li>Abra pelo menos um link.</li><li>Ache na página o número ou o fato citado.</li></ol>"
+          },
+          {
+            "rot": "Erro comum",
+            "html": "<p>Pedir fato atual sem pedir busca. Sem ferramenta, o modelo só tem o que aprendeu no treino e completa com o mais provável.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: faça a IA buscar",
+      "sub": "Um fato que mudou nas últimas semanas.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Busca com fonte",
+          "min": "15 min",
+          "texto": "Use o prompt de busca com uma pergunta sobre um fato atual (um índice, um resultado, uma data recente).",
+          "pronto": "a resposta mostrou pelo menos dois links com data, você abriu um e achou nele o dado citado."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Com e sem busca",
+          "min": "10 min",
+          "texto": "Faça a mesma pergunta numa conversa nova, agora com a busca desligada (ou sem pedir busca), e compare.",
+          "pronto": "você anotou a diferença entre as duas respostas: data, número ou falta de fonte."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Quais são os três caminhos depois de cada trecho gerado?",
+          "opcoes": [
+            "Traduzir, resumir ou apagar.",
+            "Parar, raciocinar ou usar uma ferramenta.",
+            "Enviar de novo, checar com o classificador ou empacotar outra vez.",
+            "Subir, descer ou repetir o lote."
+          ],
+          "certa": 1,
+          "explica": "É a bifurcação da etapa 7, presente desde 2023: parar, raciocinar ou usar ferramenta. Empacotar e checar acontecem antes, nas etapas 1 e 2.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Quando a IA faz uma busca na web, quem busca?",
+          "opcoes": [
+            "O próprio modelo, que lê a internet inteira de novo a cada pergunta.",
+            "Um funcionário da empresa.",
+            "O seu navegador.",
+            "Um programa (a ferramenta); o modelo só preenche os campos e chama."
+          ],
+          "certa": 3,
+          "explica": "O modelo preenche os campos (como site e período) e chama. O programa consulta o buscador e devolve os resultados para o modelo ler.",
+          "ref": "passos"
+        },
+        {
+          "p": "Para que serve começar uma linha do raciocínio com \"mas\"?",
+          "opcoes": [
+            "Empurrar o modelo a procurar um contraexemplo e se conferir.",
+            "Deixar a resposta mais educada e menos direta para quem lê.",
+            "Economizar tokens.",
+            "Avisar o classificador de que vem uma frase sensível pela frente."
+          ],
+          "certa": 0,
+          "explica": "Como o modelo segue o caminho mais provável, depois de um \"mas\" o provável é vir uma objeção. É assim que ele confere o que acabou de dizer.",
+          "ref": "passos"
+        }
+      ]
+    }
+  ]
+}

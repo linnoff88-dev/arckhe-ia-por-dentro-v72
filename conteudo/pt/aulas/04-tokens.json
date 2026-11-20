@@ -1,0 +1,332 @@
+{
+  "slug": "tokens",
+  "num": 4,
+  "menu": "Tokens",
+  "titulo": "Etapa 3: palavras viram tokens",
+  "titulo_curto": "3 · Tokens",
+  "minutos": 15,
+  "lead": "O modelo não lê palavras nem letras: lê tokens, pedaços um pouco menores que uma palavra. Isso explica por que a IA errava ao contar letras, por que erra conta e por que o português gasta mais que o inglês.",
+  "objetivo": "mostrar como uma frase vira tokens e explicar dois erros que nascem disso: contar letras e fazer conta.",
+  "competencias": [
+    "explicar-tokens",
+    "medir-tokens-de-um-texto"
+  ],
+  "aprende": [
+    {
+      "t": "O que é token e quem faz a conversão (o tokenizer)"
+    },
+    {
+      "t": "Por que strawberry vira três pedaços"
+    },
+    {
+      "t": "Por que números picados levam a erro de conta"
+    },
+    {
+      "t": "Por que cada idioma gasta tokens de um jeito"
+    }
+  ],
+  "hero_alt": "Peças de montar brancas se soltando de uma barra comprida e flutuando no escuro.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do texto aos pedaços",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Seu texto",
+          "sub": "palavras",
+          "itens": [
+            {
+              "icone": "caneta",
+              "t": "strawberry"
+            }
+          ],
+          "detalhe": "O pacote da etapa 1 é texto. Mas o modelo não trabalha com texto direto."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Tokenizer",
+          "sub": "o picador",
+          "forte": true,
+          "detalhe": "Um programa que converte o texto em tokens. Ele tem um vocabulário próprio, como peças de Lego que montam palavras diferentes. O da OpenAI tem cerca de 200 mil peças."
+        },
+        {
+          "icone": "fila",
+          "titulo": "Tokens",
+          "sub": "pedaços",
+          "itens": [
+            {
+              "icone": "camadas",
+              "t": "st · raw · berry"
+            }
+          ],
+          "detalhe": "Cada token tem, em média, uns 70% de uma palavra. Strawberry, morango em inglês, vira três: st, raw e berry."
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "Modelo",
+          "sub": "vê pedaços",
+          "detalhe": "O modelo recebe os pedaços, não as letras. Por isso, até pouco tempo atrás, errava ao contar quantas letras R tem em strawberry."
+        }
+      ],
+      "legenda": "Cada tokenizer pica de um jeito. Os exemplos desta aula usam o da OpenAI."
+    },
+    {
+      "tipo": "simtokens",
+      "titulo": "Veja frases virando tokens",
+      "sub": "Escolha um exemplo. Cada cor é um token; o ponto · marca um espaço.",
+      "exemplos": [
+        {
+          "rot": "strawberry",
+          "texto": "strawberry",
+          "pecas": [
+            "st",
+            "raw",
+            "berry"
+          ],
+          "nota": "Três pedaços e nenhum deles é uma letra sozinha. Para contar os R, o modelo teria de saber o que tem dentro de cada pedaço."
+        },
+        {
+          "rot": "ChatGPT",
+          "texto": "ChatGPT",
+          "pecas": [
+            "Chat",
+            "GPT"
+          ],
+          "nota": "Uma palavra, dois tokens. Na aula 6 você vai ver que isso exige rodar o modelo duas vezes."
+        },
+        {
+          "rot": "Pergunta em inglês",
+          "texto": "What actually happens inside ChatGPT when you ask it something?",
+          "pecas": [
+            "What",
+            " actually",
+            " happens",
+            " inside",
+            " Chat",
+            "GPT",
+            " when",
+            " you",
+            " ask",
+            " it",
+            " something",
+            "?"
+          ],
+          "nota": "Doze tokens. Repare que o espaço vai grudado na palavra seguinte."
+        },
+        {
+          "rot": "Número de 11 dígitos",
+          "texto": "38472910562",
+          "pecas": [
+            "384",
+            "729",
+            "105",
+            "62"
+          ],
+          "nota": "O número não entra inteiro: vira quatro blocos. O modelo nunca vê o número de uma vez, e é por isso que a IA erra conta."
+        },
+        {
+          "rot": "hello world",
+          "texto": "hello world",
+          "pecas": [
+            "hello",
+            " world"
+          ],
+          "nota": "Em inglês, dois tokens."
+        },
+        {
+          "rot": "A mesma em hindi",
+          "texto": "नमस्ते दुनिया",
+          "pecas": [
+            "न",
+            "म",
+            "स्त",
+            "े",
+            " दुनिया"
+          ],
+          "nota": "A mesma saudação em hindi: cinco tokens. O inglês é uma das línguas mais econômicas, e é por isso que a maioria dos modelos pensa em inglês por padrão."
+        },
+        {
+          "rot": "Português × inglês",
+          "texto": "Escreva um e-mail para o meu chefe pedindo folga na sexta.",
+          "pecas": [
+            "Es",
+            "cre",
+            "va",
+            " um",
+            " e",
+            "-mail",
+            " para",
+            " o",
+            " meu",
+            " chefe",
+            " ped",
+            "indo",
+            " fol",
+            "ga",
+            " na",
+            " sexta",
+            "."
+          ],
+          "nota": "Dezessete tokens. A mesma frase em inglês (<i>Write an email to my boss asking for Friday off.</i>) dá onze. O português gasta mais."
+        }
+      ],
+      "rot": {
+        "exemplos": "Exemplos",
+        "texto": "Texto",
+        "pecas": "Tokens",
+        "conta": "<b>{t}</b> tokens · {c} caracteres"
+      },
+      "legenda": "Medido em 20/10/2026 com o tokenizer da OpenAI (tiktoken 0.12, vocabulário o200k_base, o do GPT-4o). Outros modelos picam de outro jeito."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Dois erros que nascem dos tokens",
+      "sub": "Clique em cada um.",
+      "passos": [
+        {
+          "titulo": "Contar letras",
+          "sub": "strawberry",
+          "texto": [
+            "O modelo vê st, raw e berry, não s-t-r-a-w-b-e-r-r-y.",
+            "Por isso, até pouco tempo atrás, a IA errava quando você pedia para contar as letras de uma palavra."
+          ]
+        },
+        {
+          "titulo": "Fazer conta",
+          "sub": "números picados",
+          "texto": [
+            "Números são picados em blocos pela frequência com que aparecem. Um número de onze dígitos vira quatro ou cinco pedaços estranhos.",
+            "Sem ver o número inteiro, o modelo erra conta. Para conta importante, peça ferramenta (aula 7)."
+          ]
+        },
+        {
+          "titulo": "Idioma",
+          "sub": "custo diferente",
+          "texto": [
+            "Cada língua é picada de um jeito. Hello world dá uns dois tokens em inglês e uns cinco em hindi.",
+            "Mais tokens = mais contas e mais custo. Também é no inglês que está o dinheiro."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Frases para medir você mesmo",
+      "sub": "Cole cada linha no tokenizer da prática e compare.",
+      "blocos": [
+        {
+          "rot": "Frases · português e inglês",
+          "icone": "camadas",
+          "conteudo": "Escreva um e-mail para o meu chefe pedindo folga na sexta.\nWrite an email to my boss asking for Friday off."
+        },
+        {
+          "rot": "Frase · a sua",
+          "icone": "caneta",
+          "conteudo": "<cole aqui uma frase que você costuma mandar para a IA>"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Resultado medido (20/10/2026)",
+            "html": "<pre>o200k_base (GPT-4o)\nportuguês: 17 tokens\ninglês:    11 tokens</pre>"
+          },
+          {
+            "rot": "Erro comum",
+            "html": "<p>Medir num tokenizer e achar que vale para todos. Cada modelo tem o seu: escolha o do GPT-4o (o200k_base) para bater com os números desta aula.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: meça os seus tokens",
+      "sub": "Use um tokenizer gratuito no navegador.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Português contra inglês",
+          "min": "10 min",
+          "texto": "Abra o Tiktokenizer (link no fim da aula), escolha o modelo gpt-4o e cole as duas frases do bloco acima, uma de cada vez.",
+          "pronto": "você viu 17 tokens na frase em português e 11 na frase em inglês."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A sua frase e um número",
+          "min": "10 min",
+          "texto": "Cole uma frase que você costuma mandar para a IA e, depois, o seu CEP ou um número longo qualquer.",
+          "pronto": "você anotou quantos tokens a sua frase tem e em quantos pedaços o número foi picado."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Por que a IA errava ao contar quantas letras R tem em strawberry?",
+          "opcoes": [
+            "Porque foi treinado quase só em português e não conhece a palavra em inglês.",
+            "Porque o tokenizer apaga letras repetidas antes de mandar a palavra ao modelo.",
+            "Porque conta só as vogais.",
+            "Porque vê a palavra em pedaços (st, raw, berry), não letra por letra."
+          ],
+          "certa": 3,
+          "explica": "O modelo recebe tokens, não letras. Strawberry chega como três pedaços, e a contagem de letras fica escondida dentro deles.",
+          "ref": "simtokens"
+        },
+        {
+          "p": "Em média, quanto de uma palavra é um token?",
+          "opcoes": [
+            "Uma letra por token, sempre.",
+            "Uns 70% de uma palavra.",
+            "Exatamente uma palavra inteira, nunca mais nem menos.",
+            "Uma frase inteira."
+          ],
+          "certa": 1,
+          "explica": "Token é um pedaço um pouco menor que uma palavra, uns 70% dela em média. Palavra comum pode ser um token só; palavra rara vira vários.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Por que a IA erra conta com números grandes?",
+          "opcoes": [
+            "Porque o número chega picado em blocos, nunca inteiro.",
+            "Porque a calculadora do data center é lenta e desiste antes do fim da conta.",
+            "Porque números grandes são barrados pelos classificadores de segurança.",
+            "Porque ela arredonda tudo de propósito."
+          ],
+          "certa": 0,
+          "explica": "Um número de 11 dígitos virou 4 blocos no exemplo. Sem ver o número de uma vez, o modelo erra a conta. A saída é pedir ferramenta ou conferir.",
+          "ref": "passos"
+        },
+        {
+          "p": "A mesma frase em português e em inglês: o que acontece com os tokens?",
+          "opcoes": [
+            "São sempre iguais.",
+            "O inglês gasta mais, porque as palavras dele são mais longas.",
+            "O português gastou mais: 17 contra 11 no exemplo medido.",
+            "Depende só do tamanho da tela e da fonte que você usa no aparelho."
+          ],
+          "certa": 2,
+          "explica": "Cada língua é picada de um jeito, e o inglês é das mais econômicas. No exemplo medido, 17 tokens em português contra 11 em inglês.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Tiktokenizer: veja os tokens de qualquer texto no navegador",
+          "href": "https://tiktokenizer.vercel.app/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

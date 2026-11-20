@@ -1,0 +1,237 @@
+{
+  "slug": "datacenter",
+  "num": 5,
+  "menu": "Data center",
+  "titulo": "Etapas 4 e 5: a viagem ao data center e o modelo rodando",
+  "titulo_curto": "4–5 · Data center",
+  "minutos": 15,
+  "lead": "O modelo não mora no seu celular. Os tokens viajam até prédios cheios de chips, dividem a máquina com pedidos de outras pessoas e passam por dezenas de camadas de contas. Não é mágica: é matemática gigante.",
+  "objetivo": "explicar onde o modelo roda, por que a mesma pergunta pode sair diferente e o que a atenção faz com as palavras.",
+  "competencias": [
+    "explicar-data-center-e-lote",
+    "explicar-atencao"
+  ],
+  "aprende": [
+    {
+      "t": "Onde o modelo mora e em que tipo de chip ele roda"
+    },
+    {
+      "t": "O lote: por que você divide a GPU com estranhos"
+    },
+    {
+      "t": "Camadas e atenção: banco com rio, banco com empréstimo"
+    },
+    {
+      "t": "O que são os 175 bilhões de parâmetros do GPT-3"
+    }
+  ],
+  "hero_alt": "Corredor de um data center com fileiras de servidores e luzes verdes; duas pessoas pequenas ao fundo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do seu aparelho ao modelo",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Seu aparelho",
+          "sub": "só envia",
+          "detalhe": "O modelo não roda no seu celular nem no seu computador. O app só manda os tokens e espera a resposta."
+        },
+        {
+          "icone": "nuvem",
+          "titulo": "Viagem",
+          "sub": "milhares de km",
+          "detalhe": "Os tokens atravessam a internet até um data center, às vezes a milhares de quilômetros. É nesses prédios que o Google processa os 3,2 quatrilhões de tokens por mês."
+        },
+        {
+          "icone": "chip",
+          "titulo": "GPU",
+          "sub": "em lote",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Seu pedido"
+            },
+            {
+              "icone": "usuario",
+              "t": "Pedido de outra pessoa"
+            },
+            {
+              "icone": "usuario",
+              "t": "Mais outro…"
+            }
+          ],
+          "detalhe": "Os chips são, na maioria, GPUs da NVIDIA. O seu pedido não ganha um chip só para ele: entra num lote com o de outras pessoas, para economizar. E o tamanho do lote muda as contas: a mesma pergunta, com a mesma configuração, pode sair diferente."
+        },
+        {
+          "icone": "camadas",
+          "titulo": "Modelo",
+          "sub": "camadas",
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "Atenção",
+              "sub": "olha tudo junto"
+            },
+            {
+              "icone": "grafico",
+              "t": "Bilhões de números"
+            }
+          ],
+          "detalhe": "Os tokens passam por dezenas, às vezes centenas de camadas de operações matemáticas, como uma equação gigante com muitas variáveis."
+        }
+      ],
+      "legenda": "Etapa 4 é a viagem até a GPU; etapa 5 é o modelo rodando lá dentro."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que acontece dentro do modelo",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {
+          "titulo": "Camadas",
+          "sub": "contas em sequência",
+          "texto": [
+            "Cada camada pega o resultado da anterior e faz mais contas.",
+            "Pense numa equação gigante, com muitas e muitas variáveis."
+          ]
+        },
+        {
+          "titulo": "Atenção",
+          "sub": "Google, 2017",
+          "texto": [
+            "Quase tudo isso vem de um artigo do Google de 2017, <i>Attention Is All You Need</i>.",
+            "A atenção deixa o modelo olhar todas as palavras do texto ao mesmo tempo para entender o sentido de cada uma."
+          ],
+          "exemplo": {
+            "rot": "Banco",
+            "texto": "Com \"rio\" por perto, banco é a margem. Com \"empréstimo\", banco é dinheiro."
+          }
+        },
+        {
+          "titulo": "Parâmetros",
+          "sub": "175 bilhões",
+          "texto": [
+            "O GPT-3 tinha 175 bilhões de parâmetros: 175 bilhões de números ajustados no treino.",
+            "Eles ficam organizados em matrizes, multiplicadas umas pelas outras sem parar."
+          ]
+        },
+        {
+          "titulo": "O lote",
+          "sub": "dividir a GPU",
+          "texto": [
+            "Uma GPU atende muita gente ao mesmo tempo. As contas mudam com o tamanho do lote.",
+            "Por isso a mesma pergunta pode sair diferente se você estiver sozinho ou num lote cheio."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Teste a atenção e o lote",
+      "sub": "Dois prompts para a prática.",
+      "blocos": [
+        {
+          "rot": "Prompt · o banco",
+          "icone": "lupa",
+          "conteudo": "Frase 1: Sentei no banco à beira do rio.\nFrase 2: Fui ao banco pedir um empréstimo.\nEm cada frase, o que \"banco\" quer dizer? Diga qual palavra vizinha decidiu o sentido."
+        },
+        {
+          "rot": "Prompt · a mesma pergunta duas vezes",
+          "icone": "chat",
+          "conteudo": "Em três frases, explique por que o céu é azul."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>No prompt do banco, a resposta aponta \"rio\" e \"empréstimo\" como as palavras que decidiram.</li><li>Mande o segundo prompt em duas conversas novas e ponha as respostas lado a lado.</li></ol>"
+          },
+          {
+            "rot": "Erro comum",
+            "html": "<p>Achar que resposta diferente é defeito. O lote é um dos motivos de a mesma pergunta sair diferente; o que importa é o conteúdo continuar certo.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: veja o modelo trabalhando",
+      "sub": "No app que você usa, sempre em conversas novas.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · O banco",
+          "min": "5 min",
+          "texto": "Cole o prompt do banco numa conversa nova.",
+          "pronto": "a resposta deu os dois sentidos e citou \"rio\" e \"empréstimo\" como as palavras que decidiram."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A mesma pergunta duas vezes",
+          "min": "10 min",
+          "texto": "Mande o prompt do céu azul em duas conversas novas e cole as duas respostas lado a lado num documento.",
+          "pronto": "você marcou pelo menos uma diferença de texto entre as duas respostas, ou anotou que saíram idênticas."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Onde o modelo roda quando você usa o app no celular?",
+          "opcoes": [
+            "No processador do celular.",
+            "Num servidor da operadora de celular, na antena mais perto de você.",
+            "Num chip de IA dentro do próprio celular, sem precisar de internet.",
+            "Em data centers cheios de GPUs, às vezes a milhares de quilômetros."
+          ],
+          "certa": 3,
+          "explica": "O app só envia os tokens. O modelo roda em data centers, em GPUs, na maioria da NVIDIA.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Por que a mesma pergunta pode sair diferente mesmo com a mesma configuração?",
+          "opcoes": [
+            "Porque o modelo fica cansado.",
+            "Porque o seu pedido divide a GPU num lote, e o tamanho do lote muda as contas.",
+            "Porque o app troca o idioma da pergunta antes de mandar ao modelo.",
+            "Porque os classificadores reescrevem a resposta de um jeito diferente a cada vez que leem."
+          ],
+          "certa": 1,
+          "explica": "Seu pedido entra num lote com o de outras pessoas. Quem divide a GPU com você pode mudar as contas e, com elas, a resposta.",
+          "ref": "passos"
+        },
+        {
+          "p": "O que a atenção faz?",
+          "opcoes": [
+            "Deixa o modelo olhar todas as palavras juntas para entender o sentido de cada uma.",
+            "Faz o modelo ler o texto mais devagar, uma palavra de cada vez, para não errar.",
+            "Avisa quando você está distraído.",
+            "Escolhe o data center mais próximo."
+          ],
+          "certa": 0,
+          "explica": "É a ideia do artigo do Google de 2017. Com \"rio\" por perto, banco é margem; com \"empréstimo\", banco é dinheiro.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Attention Is All You Need (Google, 2017), o artigo original (em inglês)",
+          "href": "https://arxiv.org/abs/1706.03762",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "slug": "checagem",
+  "num": 3,
+  "menu": "Checagem",
+  "titulo": "Etapa 2: sua mensagem é checada",
+  "titulo_curto": "2 · Checada",
+  "minutos": 12,
+  "lead": "Antes de chegar ao modelo grande, a sua mensagem passa por outros modelos, menores, que leem tudo o que você escreve. Eles barram pedido perigoso e, às vezes, mandam o pedido para outro modelo. Saber disso explica recusas e mudanças de tom.",
+  "objetivo": "descrever o papel dos classificadores e o que acontece com um pedido considerado arriscado.",
+  "competencias": [
+    "explicar-classificadores",
+    "ler-politica-de-uso"
+  ],
+  "aprende": [
+    {
+      "t": "O que é um classificador de segurança"
+    },
+    {
+      "t": "Os números da Anthropic: de quase 90% para uns 5%"
+    },
+    {
+      "t": "Como a OpenAI desvia pedido arriscado e protege menores"
+    }
+  ],
+  "hero_alt": "Corredor escuro com um portal de lasers vermelhos; uma caixa de luz atravessa o portal.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Quem lê a sua mensagem antes do modelo",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Mensagem",
+          "sub": "o pacote",
+          "detalhe": "O pacote montado na etapa 1 segue em frente. Mas, antes do modelo grande, alguém lê."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Classificadores",
+          "sub": "modelos menores",
+          "forte": true,
+          "detalhe": "Modelos menores que ficam o tempo todo olhando a conversa com o modelo grande. Eles leem tudo o que você escreve para barrar pedido perigoso, como fabricar droga ou arma."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Rota",
+          "sub": "para onde vai",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Modelo de sempre"
+            },
+            {
+              "icone": "escudo",
+              "t": "Modelo mais cauteloso",
+              "sub": "pedido arriscado"
+            },
+            {
+              "icone": "usuario",
+              "t": "Versão protegida",
+              "sub": "menores de 18"
+            }
+          ],
+          "detalhe": "A OpenAI faz assim: se achar o pedido arriscado, manda para outro modelo, mais cauteloso. E quem tem menos de 18 anos vai para uma versão mais protegida."
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "Modelo",
+          "sub": "responde",
+          "detalhe": "Só depois da checagem o pedido segue para o modelo que vai responder. Se foi barrado, você recebe uma recusa."
+        }
+      ],
+      "legenda": "Goste ou não, é assim que os grandes apps funcionam hoje."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "O que mudou com os classificadores",
+      "sub": "Os números divulgados pela Anthropic. Clique em cada etapa.",
+      "passos": [
+        {
+          "titulo": "Antes",
+          "sub": "quase 90%",
+          "texto": [
+            "Sem o classificador, quase 90% das tentativas de burlar o modelo davam certo.",
+            "Burlar o modelo (o famoso jailbreak) é escrever o pedido de um jeito que engana as regras."
+          ]
+        },
+        {
+          "titulo": "Depois",
+          "sub": "uns 5%",
+          "texto": [
+            "Com o primeiro classificador da Anthropic, essas tentativas que davam certo caíram para uns 5%."
+          ],
+          "exemplo": {
+            "rot": "A virada",
+            "texto": "De quase 90% para uns 5% de tentativas bem-sucedidas."
+          }
+        },
+        {
+          "titulo": "Custo",
+          "sub": "menos de 1%",
+          "texto": [
+            "O que antes custava caro hoje custa menos de 1% do que custa rodar o modelo.",
+            "Por isso a checagem virou padrão: é barata perto do resto."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Pergunte ao app quais são as regras",
+      "sub": "Cole no app que você usa e depois confira na fonte oficial.",
+      "blocos": [
+        {
+          "rot": "Prompt · as regras do app",
+          "icone": "escudo",
+          "conteudo": "Quais tipos de pedido você não atende?\nListe em até 5 tópicos curtos e, no fim, diga onde fica a política de uso oficial da empresa que faz você (nome da página e endereço).\nNão invente o endereço: se não souber, diga que não sabe."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>Abra a política de uso oficial (procure por \"usage policy\" no site da empresa).</li><li>Ache lá pelo menos dois itens da lista que o app deu.</li><li>Se o endereço que ele deu não abrir, anote: é um exemplo de resposta confiante e errada.</li></ol>"
+          },
+          {
+            "rot": "Erro comum",
+            "html": "<p>Achar que a recusa é \"opinião\" do modelo naquele momento. Muitas vezes quem barrou foi a checagem, antes de o modelo grande ler o pedido.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: as regras na fonte",
+      "sub": "A ideia é comparar o que a IA diz com o documento oficial.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · A lista e a fonte",
+          "min": "15 min",
+          "texto": "Cole o prompt acima no app que você usa. Depois abra a política de uso oficial da empresa e compare.",
+          "pronto": "você achou na política oficial pelo menos dois itens da lista que a IA deu, e anotou se o endereço que ela informou abriu."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "O que é um classificador de segurança?",
+          "opcoes": [
+            "Um funcionário que lê as conversas.",
+            "Um modelo menor que lê a conversa para barrar pedido perigoso.",
+            "Um filtro de palavrões instalado no teclado do celular, que corrige o texto.",
+            "A parte do modelo grande que escreve a resposta."
+          ],
+          "certa": 1,
+          "explica": "São modelos menores que acompanham a conversa com o modelo grande. Não é gente lendo, e não é o modelo que responde.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Segundo a Anthropic, o que aconteceu com as tentativas de burlar o modelo que davam certo?",
+          "opcoes": [
+            "Caíram de quase 90% para uns 5%.",
+            "Subiram de 5% para 90%.",
+            "Ficaram iguais, mas mais baratas.",
+            "Zeraram de vez."
+          ],
+          "certa": 0,
+          "explica": "Com o primeiro classificador, as tentativas bem-sucedidas caíram de quase 90% para uns 5%. Não zeraram: a checagem reduz o risco, não elimina.",
+          "ref": "passos"
+        },
+        {
+          "p": "Na OpenAI, o que acontece com um pedido considerado arriscado?",
+          "opcoes": [
+            "É apagado na hora, sem resposta e sem aviso nenhum.",
+            "É enviado para a polícia.",
+            "Vai para outro modelo, mais cauteloso.",
+            "Volta para você reescrever com palavras mais suaves antes de seguir."
+          ],
+          "certa": 2,
+          "explica": "O pedido é desviado para um modelo mais cauteloso. E quem tem menos de 18 anos vai para uma versão mais protegida.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Anthropic: pesquisa sobre os classificadores de segurança (em inglês)",
+          "href": "https://www.anthropic.com/research/constitutional-classifiers",
+          "icone": "escudo"
+        }
+      ]
+    }
+  ]
+}
