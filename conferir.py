@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Conferidor do INEMA Learning 7.13.16 — as MESMAS regras do assets/v72-conferidor.js (seção "conferidor").
+"""Conferidor do ARCKHÉ Learning 7.13.16 — as MESMAS regras do assets/v72-conferidor.js (seção "conferidor").
 
 O aluno escreve um arquivo (ficha, cartão, decupagem) e a página confere. Este script é a opção para quem tem
 terminal: confere o mesmo arquivo, com as regras escritas no JSON da aula.
