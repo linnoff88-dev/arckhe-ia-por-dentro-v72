@@ -1,12 +1,12 @@
 {
   "slug": "bifurcacao",
   "num": 7,
-  "menu": "Decisão",
+  "menu": "Decisêo",
   "titulo": "Etapa 7: parar, raciocinar ou usar uma ferramenta",
-  "titulo_curto": "7 · A decisão",
+  "titulo_curto": "7 · A decisêo",
   "minutos": 15,
   "lead": "Desde 2023, depois de gerar um trecho, o modelo decide entre três caminhos: parar, raciocinar mais ou usar uma ferramenta. É assim que a IA de hoje confere a si mesma e busca fato atual, em vez de só adivinhar o próximo pedaço.",
-  "objetivo": "distinguir os três caminhos da bifurcação e pedir uma busca com fonte que você consegue conferir.",
+  "objetivo": "distinguir os três caminhos da bifurcaçêo e pedir uma busca com fonte que você consegue conferir.",
   "competencias": [
     "explicar-raciocinio-do-modelo",
     "usar-ferramenta-de-busca"
@@ -29,7 +29,7 @@
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "A bifurcação",
+      "titulo": "A bifurcaçêo",
       "sub": "Clique em cada bloco.",
       "nos": [
         {
@@ -40,7 +40,7 @@
         },
         {
           "icone": "portao",
-          "titulo": "Decisão",
+          "titulo": "Decisêo",
           "sub": "três caminhos",
           "forte": true,
           "itens": [
@@ -75,12 +75,12 @@
           "detalhe": "O resultado volta para o texto, e o modelo decide de novo: parar, pensar mais ou usar outra ferramenta. Gira assim até ficar satisfeito."
         }
       ],
-      "volta": "Com o resultado na mão, o modelo decide de novo",
+      "volta": "Com o resultado na mêo, o modelo decide de novo",
       "legenda": "Essa volta inteira, das sete etapas, acontece em poucos segundos."
     },
     {
       "tipo": "passos",
-      "titulo": "Os dois caminhos que não são parar",
+      "titulo": "Os dois caminhos que nêo sêo parar",
       "sub": "Clique em cada etapa.",
       "passos": [
         {
@@ -108,7 +108,7 @@
           ],
           "exemplo": {
             "rot": "Quem faz o quê",
-            "texto": "Quem busca é o programa, não o modelo. O modelo só chama."
+            "texto": "Quem busca é o programa, nêo o modelo. O modelo só chama."
           }
         }
       ]
@@ -121,12 +121,12 @@
         {
           "rot": "Exemplo · chamada de busca (ilustrativa)",
           "icone": "lupa",
-          "conteudo": "ferramenta: busca_web\nconsulta:   inflação oficial do último mês no Brasil\nsite:       ibge.gov.br\nperíodo:    últimos 30 dias"
+          "conteudo": "ferramenta: busca_web\nconsulta:   inflaçêo oficial do último mês no Brasil\nsite:       ibge.gov.br\nperíodo:    últimos 30 dias"
         },
         {
           "rot": "Prompt · busca com fonte",
           "icone": "chat",
-          "conteudo": "Pesquise na web e responda: <sua pergunta sobre um fato atual>\nRegras:\n- use só fontes oficiais ou de imprensa conhecida;\n- mostre o link de cada fonte e a data da publicação;\n- se não achar, diga que não achou, sem chutar."
+          "conteudo": "Pesquise na web e responda: <sua pergunta sobre um fato atual>\nRegras:\n- use só fontes oficiais ou de imprensa conhecida;\n- mostre o link de cada fonte e a data da publicaçêo;\n- se nêo achar, diga que nêo achou, sem chutar."
         }
       ],
       "saida": {
@@ -134,7 +134,7 @@
         "abas": [
           {
             "rot": "Como conferir",
-            "html": "<ol><li>A resposta trouxe links (se não trouxe, o app pode estar sem busca ligada: procure a opção de busca na web).</li><li>Abra pelo menos um link.</li><li>Ache na página o número ou o fato citado.</li></ol>"
+            "html": "<ol><li>A resposta trouxe links (se nêo trouxe, o app pode estar sem busca ligada: procure a opçêo de busca na web).</li><li>Abra pelo menos um link.</li><li>Ache na página o número ou o fato citado.</li></ol>"
           },
           {
             "rot": "Erro comum",
@@ -167,10 +167,10 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Quais são os três caminhos depois de cada trecho gerado?",
+          "p": "Quais sêo os três caminhos depois de cada trecho gerado?",
           "opcoes": [
             "Traduzir, resumir ou apagar.",
             "Parar, raciocinar ou usar uma ferramenta.",
@@ -178,7 +178,7 @@
             "Subir, descer ou repetir o lote."
           ],
           "certa": 1,
-          "explica": "É a bifurcação da etapa 7, presente desde 2023: parar, raciocinar ou usar ferramenta. Empacotar e checar acontecem antes, nas etapas 1 e 2.",
+          "explica": "É a bifurcaçêo da etapa 7, presente desde 2023: parar, raciocinar ou usar ferramenta. Empacotar e checar acontecem antes, nas etapas 1 e 2.",
           "ref": "diagrama"
         },
         {
@@ -202,7 +202,7 @@
             "Avisar o classificador de que vem uma frase sensível pela frente."
           ],
           "certa": 0,
-          "explica": "Como o modelo segue o caminho mais provável, depois de um \"mas\" o provável é vir uma objeção. É assim que ele confere o que acabou de dizer.",
+          "explica": "Como o modelo segue o caminho mais provável, depois de um \"mas\" o provável é vir uma objeçêo. É assim que ele confere o que acabou de dizer.",
           "ref": "passos"
         }
       ]

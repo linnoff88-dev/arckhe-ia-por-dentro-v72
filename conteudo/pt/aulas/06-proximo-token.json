@@ -5,7 +5,7 @@
   "titulo": "Etapa 6: sai um token por vez",
   "titulo_curto": "6 · Um token por vez",
   "minutos": 14,
-  "lead": "Cada passada inteira pelo modelo gera um único token. Para o próximo, ele roda tudo de novo. E o trabalho dele não é dizer a verdade: é escolher o pedaço mais provável. Daí nasce a alucinação.",
+  "lead": "Cada passada inteira pelo modelo gera um único token. Para o próximo, ele roda tudo de novo. E o trabalho dele nêo é dizer a verdade: é escolher o pedaço mais provável. Daí nasce a alucinaçêo.",
   "objetivo": "explicar por que a resposta escorre na tela e por que uma resposta confiante pode estar errada.",
   "competencias": [
     "explicar-geracao-token-a-token",
@@ -19,10 +19,10 @@
       "t": "Por que você vê a resposta escorrendo e pode parar no meio"
     },
     {
-      "t": "Provável não é certo: Canberra e Sydney"
+      "t": "Provável nêo é certo: Canberra e Sydney"
     },
     {
-      "t": "O que é alucinação e como conferir"
+      "t": "O que é alucinaçêo e como conferir"
     }
   ],
   "hero_alt": "Fila de dominós pretos; o primeiro brilha em branco e cai para a frente.",
@@ -42,14 +42,14 @@
           "icone": "chip",
           "titulo": "Passada",
           "sub": "modelo inteiro",
-          "detalhe": "Uma passada inteira pelas camadas, como na aula 5. Até a palavra ChatGPT, que são dois tokens, exige rodar o modelo duas vezes."
+          "detalhe": "Uma passada inteira pelas camadas, como na aula 5. Até a palavra ChatGPT, que sêo dois tokens, exige rodar o modelo duas vezes."
         },
         {
           "icone": "grafico",
           "titulo": "Chances",
           "sub": "próximo pedaço",
           "forte": true,
-          "detalhe": "O resultado não é uma palavra: é uma lista de chances para o próximo token. O modelo escolhe o pedaço mais provável."
+          "detalhe": "O resultado nêo é uma palavra: é uma lista de chances para o próximo token. O modelo escolhe o pedaço mais provável."
         },
         {
           "icone": "check",
@@ -59,12 +59,12 @@
         }
       ],
       "volta": "O token novo entra no texto e o modelo roda tudo de novo",
-      "legenda": "Por isso a conta dos data centers é tão pesada: uma resposta de 500 tokens são 500 passadas."
+      "legenda": "Por isso a conta dos data centers é têo pesada: uma resposta de 500 tokens sêo 500 passadas."
     },
     {
       "tipo": "simproximo",
       "titulo": "Gere a resposta token por token",
-      "sub": "Cada clique em \"Rodar o modelo\" é uma passada. Num dos passos, experimente escolher a segunda opção.",
+      "sub": "Cada clique em \"Rodar o modelo\" é uma passada. Num dos passos, experimente escolher a segunda opçêo.",
       "pergunta": "Qual é a capital da Austrália?",
       "passos": [
         {
@@ -187,22 +187,22 @@
       "msg": {
         "inicio": "O modelo leu a pergunta e calculou as chances do primeiro token. Clique em Rodar o modelo.",
         "segue": "O token escolhido entrou no texto. Para o próximo, o modelo roda tudo de novo.",
-        "ramo": "Aqui mora o perigo: Canberra é a mais provável, mas Sydney vem logo atrás. Clique numa opção ou em Rodar o modelo.",
-        "fim_certo": "Resposta certa. O modelo não sabia a verdade: escolheu o mais provável, e o provável era o certo.",
-        "fim_errado": "Resposta confiante e errada: a capital da Austrália é Canberra. Quando o provável não é o certo, nasce a alucinação."
+        "ramo": "Aqui mora o perigo: Canberra é a mais provável, mas Sydney vem logo atrás. Clique numa opçêo ou em Rodar o modelo.",
+        "fim_certo": "Resposta certa. O modelo nêo sabia a verdade: escolheu o mais provável, e o provável era o certo.",
+        "fim_errado": "Resposta confiante e errada: a capital da Austrália é Canberra. Quando o provável nêo é o certo, nasce a alucinaçêo."
       },
-      "legenda": "Ilustrativo: as porcentagens não foram medidas em modelo nenhum; servem para mostrar a ideia. Canberra na frente e Sydney logo atrás é o exemplo da aula."
+      "legenda": "Ilustrativo: as porcentagens nêo foram medidas em modelo nenhum; servem para mostrar a ideia. Canberra na frente e Sydney logo atrás é o exemplo da aula."
     },
     {
       "tipo": "passos",
-      "titulo": "Provável não é certo",
+      "titulo": "Provável nêo é certo",
       "sub": "Clique em cada etapa.",
       "passos": [
         {
           "titulo": "O trabalho do modelo",
           "sub": "o mais provável",
           "texto": [
-            "O trabalho do modelo não é dizer a verdade. É escolher o próximo pedaço mais provável, dado tudo o que veio antes."
+            "O trabalho do modelo nêo é dizer a verdade. É escolher o próximo pedaço mais provável, dado tudo o que veio antes."
           ]
         },
         {
@@ -214,14 +214,14 @@
         },
         {
           "titulo": "Quando dá errado",
-          "sub": "alucinação",
+          "sub": "alucinaçêo",
           "texto": [
-            "Quando o provável não é o certo, sai uma resposta confiante e errada: a alucinação.",
-            "O tom confiante não muda nada: é o mesmo cálculo de chances."
+            "Quando o provável nêo é o certo, sai uma resposta confiante e errada: a alucinaçêo.",
+            "O tom confiante nêo muda nada: é o mesmo cálculo de chances."
           ],
           "exemplo": {
             "rot": "O hábito",
-            "texto": "Resposta confiante não é resposta certa. Fato que importa, você confere."
+            "texto": "Resposta confiante nêo é resposta certa. Fato que importa, você confere."
           }
         }
       ]
@@ -234,7 +234,7 @@
         {
           "rot": "Prompt · resposta com conferência",
           "icone": "check",
-          "conteudo": "<sua pergunta sobre um fato>\n\nDepois da resposta, diga:\n- o que nela é mais provável de estar errado;\n- em que fonte oficial eu confiro (nome do órgão ou do documento)."
+          "conteudo": "<sua pergunta sobre um fato>\n\nDepois da resposta, diga:\n- o que nela é mais provável de estar errado;\n- em que fonte oficial eu confiro (nome do órgêo ou do documento)."
         }
       ],
       "saida": {
@@ -253,14 +253,14 @@
     },
     {
       "tipo": "pratica",
-      "titulo": "Prática: pegue uma alucinação",
+      "titulo": "Prática: pegue uma alucinaçêo",
       "sub": "Escolha um fato pouco conhecido, que dá para conferir.",
       "exercicios": [
         {
           "id": "e1",
           "titulo": "E1 · Fato pouco conhecido",
           "min": "15 min",
-          "texto": "Pergunte com o modelo de prompt acima um fato pouco conhecido que dá para conferir, como o ano de fundação da sua cidade ou o nome do prefeito de uma cidade pequena.",
+          "texto": "Pergunte com o modelo de prompt acima um fato pouco conhecido que dá para conferir, como o ano de fundaçêo da sua cidade ou o nome do prefeito de uma cidade pequena.",
           "pronto": "você tem a resposta da IA, a fonte oficial aberta ao lado e marcou se estava certa ou errada."
         }
       ]
@@ -268,18 +268,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Quantas vezes o modelo roda para escrever a palavra ChatGPT?",
           "opcoes": [
             "Uma vez, é uma palavra só.",
             "Sete vezes, uma por letra.",
-            "Duas vezes: são dois tokens.",
+            "Duas vezes: sêo dois tokens.",
             "Nenhuma: ela vem pronta do pacote."
           ],
           "certa": 2,
-          "explica": "ChatGPT são dois tokens (Chat e GPT), e cada passada gera um token. Logo, duas passadas.",
+          "explica": "ChatGPT sêo dois tokens (Chat e GPT), e cada passada gera um token. Logo, duas passadas.",
           "ref": "diagrama"
         },
         {
@@ -291,7 +291,7 @@
             "Copiar a resposta de outra pessoa do lote."
           ],
           "certa": 0,
-          "explica": "O modelo calcula chances e escolhe o mais provável. Ele não consulta a verdade, a não ser que use uma ferramenta (aula 7).",
+          "explica": "O modelo calcula chances e escolhe o mais provável. Ele nêo consulta a verdade, a nêo ser que use uma ferramenta (aula 7).",
           "ref": "simproximo"
         },
         {
@@ -300,7 +300,7 @@
             "O data center estava cheio.",
             "Ela foi bloqueada pelo classificador e trocou a resposta certa por outra.",
             "O tokenizer picou errado a palavra Austrália, e o modelo leu outro país.",
-            "Saiu um token provável mas errado: uma alucinação."
+            "Saiu um token provável mas errado: uma alucinaçêo."
           ],
           "certa": 3,
           "explica": "Sydney tem chance alta, logo atrás de Canberra. Quando o escolhido é provável mas errado, a resposta sai confiante e errada.",

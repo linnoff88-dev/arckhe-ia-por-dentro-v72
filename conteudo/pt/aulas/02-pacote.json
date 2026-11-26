@@ -5,7 +5,7 @@
   "titulo": "Etapa 1: sua mensagem é empacotada",
   "titulo_curto": "1 · Empacotada",
   "minutos": 14,
-  "lead": "O ChatGPT não é o modelo de IA: é um aplicativo em volta dele. Quando você aperta enviar, o app junta à sua frase um monte de coisa, toda vez. Entender esse pacote explica por que conversa longa piora a resposta.",
+  "lead": "O ChatGPT nêo é o modelo de IA: é um aplicativo em volta dele. Quando você aperta enviar, o app junta à sua frase um monte de coisa, toda vez. Entender esse pacote explica por que conversa longa piora a resposta.",
   "objetivo": "listar o que o app junta à sua mensagem e reconhecer quando a conversa ficou longa demais.",
   "competencias": [
     "separar-app-e-modelo",
@@ -16,7 +16,7 @@
       "t": "A diferença entre o app e o modelo"
     },
     {
-      "t": "As cinco peças que vão junto com a sua frase"
+      "t": "As cinco peças que vêo junto com a sua frase"
     },
     {
       "t": "Por que o modelo precisa receber a conversa inteira a cada envio"
@@ -25,7 +25,7 @@
       "t": "O que é context rot, o contexto apodrecendo"
     }
   ],
-  "hero_alt": "Caixa de vidro sendo enchida de folhas, caderno, pasta e um rolo de papel que escorre até o chão.",
+  "hero_alt": "Caixa de vidro sendo enchida de folhas, caderno, pasta e um rolo de papel que escorre até o chêo.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -78,13 +78,13 @@
               "t": "A conversa inteira"
             }
           ],
-          "detalhe": "O prompt de sistema vem primeiro: são as instruções da própria empresa. A Anthropic publica o do Claude, que passa de três mil palavras e começa pela data de hoje, porque o modelo sozinho não sabe que dia é. Depois vêm as suas instruções, as memórias, os arquivos e a conversa inteira."
+          "detalhe": "O prompt de sistema vem primeiro: sêo as instruções da própria empresa. A Anthropic publica o do Claude, que passa de três mil palavras e começa pela data de hoje, porque o modelo sozinho nêo sabe que dia é. Depois vêm as suas instruções, as memórias, os arquivos e a conversa inteira."
         },
         {
           "icone": "cerebro",
           "titulo": "O modelo",
           "sub": "sem memória",
-          "detalhe": "O modelo não lembra de nada entre um envio e outro. Para seguir o assunto, cada envio carrega cada caractere que você já escreveu na conversa."
+          "detalhe": "O modelo nêo lembra de nada entre um envio e outro. Para seguir o assunto, cada envio carrega cada caractere que você já escreveu na conversa."
         }
       ],
       "legenda": "Toda vez que você envia, o pacote é montado de novo, com a conversa até ali.",
@@ -141,7 +141,7 @@
         "cresce": "A conversa anterior volta inteira em cada envio. Continue enviando e veja a barra crescer.",
         "aviso": "Pacote grande: o modelo faz contas em cima de tudo isso e a resposta fica menos confiável. Hora de abrir uma conversa nova com um resumo."
       },
-      "legenda": "Medido: o prompt de sistema do Claude passa de três mil palavras. Ilustrativo: os outros tamanhos e o ponto do aviso, só para ver a proporção."
+      "legenda": "Medido: o prompt de sistema do Claude passa de três mil palavras. Ilustrativo: os outros tamanhos e o ponto do aviso, só para ver a proporçêo."
     },
     {
       "tipo": "passos",
@@ -161,10 +161,10 @@
         },
         {
           "titulo": "Mais contas",
-          "sub": "precisão cai",
+          "sub": "precisêo cai",
           "texto": [
             "O modelo faz contas cada vez mais complicadas em cima de tudo isso.",
-            "Cada conta intermediária perde um pouquinho de precisão."
+            "Cada conta intermediária perde um pouquinho de precisêo."
           ]
         },
         {
@@ -189,7 +189,7 @@
         {
           "rot": "Prompt · o que vai junto",
           "icone": "chat",
-          "conteudo": "Antes de responder qualquer coisa, me diga em tópicos curtos:\n1. Que dia é hoje, segundo as informações que você recebeu?\n2. Quais instruções personalizadas minhas você está seguindo?\n3. O que você tem salvo na memória sobre mim?\nSe não houver nada em algum item, diga \"nada\"."
+          "conteudo": "Antes de responder qualquer coisa, me diga em tópicos curtos:\n1. Que dia é hoje, segundo as informações que você recebeu?\n2. Quais instruções personalizadas minhas você está seguindo?\n3. O que você tem salvo na memória sobre mim?\nSe nêo houver nada em algum item, diga \"nada\"."
         }
       ],
       "saida": {
@@ -230,7 +230,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Por que o prompt de sistema do Claude começa pela data de hoje?",
@@ -238,10 +238,10 @@
             "Para registrar no histórico o dia e a hora em que a conversa começou.",
             "Por exigência legal.",
             "Para o app cobrar por dia de uso.",
-            "Porque o modelo sozinho não sabe que dia é."
+            "Porque o modelo sozinho nêo sabe que dia é."
           ],
           "certa": 3,
-          "explica": "O modelo não tem relógio nem calendário; ele só trabalha com o texto que recebe. Se a data não vier no pacote, ele não sabe.",
+          "explica": "O modelo nêo tem relógio nem calendário; ele só trabalha com o texto que recebe. Se a data nêo vier no pacote, ele nêo sabe.",
           "ref": "diagrama"
         },
         {
@@ -253,7 +253,7 @@
             "Só as últimas cinco mensagens."
           ],
           "certa": 2,
-          "explica": "O modelo não tem memória: para seguir o assunto, cada envio carrega a conversa inteira. É por isso que conversa longa fica pesada.",
+          "explica": "O modelo nêo tem memória: para seguir o assunto, cada envio carrega a conversa inteira. É por isso que conversa longa fica pesada.",
           "ref": "simpacote"
         },
         {
@@ -265,7 +265,7 @@
             "O modelo esquecer a data."
           ],
           "certa": 0,
-          "explica": "Com entrada muito longa, o modelo faz mais contas e cada uma perde um pouco de precisão. A qualidade cai: o contexto apodrece.",
+          "explica": "Com entrada muito longa, o modelo faz mais contas e cada uma perde um pouco de precisêo. A qualidade cai: o contexto apodrece.",
           "ref": "passos"
         }
       ]

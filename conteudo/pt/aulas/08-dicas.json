@@ -44,7 +44,7 @@
           "icone": "caneta",
           "titulo": "Instruções",
           "sub": "etapa 1",
-          "detalhe": "Instruções personalizadas curtas e claras: elas vão junto em todo envio, dentro do pacote (aula 2)."
+          "detalhe": "Instruções personalizadas curtas e claras: elas vêo junto em todo envio, dentro do pacote (aula 2)."
         },
         {
           "icone": "lupa",
@@ -63,7 +63,7 @@
           "icone": "alvo",
           "titulo": "Dúvida",
           "sub": "etapa 6",
-          "detalhe": "Resposta confiante não é resposta certa: é só a mais provável. Fato que importa, você confere (aula 6)."
+          "detalhe": "Resposta confiante nêo é resposta certa: é só a mais provável. Fato que importa, você confere (aula 6)."
         }
       ],
       "legenda": "Cinco hábitos, cinco etapas por trás."
@@ -76,22 +76,22 @@
         {
           "rot": "Dica 1 · resumo para conversa nova",
           "icone": "chat",
-          "conteudo": "Esta conversa ficou longa. Faça um resumo para eu colar numa conversa nova:\n- objetivo do trabalho;\n- decisões já tomadas;\n- o que ainda falta;\n- dados e nomes que não podem se perder.\nNo máximo 15 linhas."
+          "conteudo": "Esta conversa ficou longa. Faça um resumo para eu colar numa conversa nova:\n- objetivo do trabalho;\n- decisões já tomadas;\n- o que ainda falta;\n- dados e nomes que nêo podem se perder.\nNo máximo 15 linhas."
         },
         {
           "rot": "Dica 2 · instruções personalizadas curtas",
           "icone": "caneta",
-          "conteudo": "Sou <sua profissão> e uso a IA para <seu uso principal>.\nResponda em português, frases curtas, em tópicos quando couber.\nQuando não tiver certeza, diga.\nPara fato atual, busque e mostre a fonte."
+          "conteudo": "Sou <sua profissêo> e uso a IA para <seu uso principal>.\nResponda em português, frases curtas, em tópicos quando couber.\nQuando nêo tiver certeza, diga.\nPara fato atual, busque e mostre a fonte."
         },
         {
           "rot": "Dica 3 · fato atual com fonte",
           "icone": "lupa",
-          "conteudo": "Pesquise na web e responda: <sua pergunta>\nMostre o link e a data de cada fonte. Se não achar, diga que não achou."
+          "conteudo": "Pesquise na web e responda: <sua pergunta>\nMostre o link e a data de cada fonte. Se nêo achar, diga que nêo achou."
         },
         {
           "rot": "Dica 4 · conta com ferramenta",
           "icone": "grafico",
-          "conteudo": "Calcule <sua conta> usando a ferramenta de código ou de cálculo, não de cabeça.\nMostre a conta passo a passo e o resultado final."
+          "conteudo": "Calcule <sua conta> usando a ferramenta de código ou de cálculo, nêo de cabeça.\nMostre a conta passo a passo e o resultado final."
         },
         {
           "rot": "Dica 5 · resposta confiante sob suspeita",
@@ -104,11 +104,11 @@
         "abas": [
           {
             "rot": "Quando usar",
-            "html": "<ul><li><b>Dica 1</b>: a conversa passou de muitas mensagens ou a IA começou a esquecer o combinado.</li><li><b>Dica 2</b>: uma vez, nas configurações do app.</li><li><b>Dica 3</b>: qualquer número, data ou fato recente.</li><li><b>Dica 4</b>: conta que vai para documento, orçamento ou decisão.</li><li><b>Dica 5</b>: resposta que você vai usar sem outra conferência.</li></ul>"
+            "html": "<ul><li><b>Dica 1</b>: a conversa passou de muitas mensagens ou a IA começou a esquecer o combinado.</li><li><b>Dica 2</b>: uma vez, nas configurações do app.</li><li><b>Dica 3</b>: qualquer número, data ou fato recente.</li><li><b>Dica 4</b>: conta que vai para documento, orçamento ou decisêo.</li><li><b>Dica 5</b>: resposta que você vai usar sem outra conferência.</li></ul>"
           },
           {
             "rot": "Erro comum",
-            "html": "<p>Escrever instruções enormes \"para garantir\". Elas vão em todo envio e engordam o pacote: curto e claro funciona melhor.</p>"
+            "html": "<p>Escrever instruções enormes \"para garantir\". Elas vêo em todo envio e engordam o pacote: curto e claro funciona melhor.</p>"
           }
         ]
       }
@@ -143,22 +143,22 @@
           "id": "e4",
           "titulo": "E4 · Conta com ferramenta",
           "min": "10 min",
-          "texto": "Use o modelo da dica 4 com uma conta real (juros, orçamento, divisão de despesas) e confira numa calculadora.",
-          "pronto": "o resultado da IA e o da sua calculadora são iguais."
+          "texto": "Use o modelo da dica 4 com uma conta real (juros, orçamento, divisêo de despesas) e confira numa calculadora.",
+          "pronto": "o resultado da IA e o da sua calculadora sêo iguais."
         },
         {
           "id": "e5",
           "titulo": "E5 · A resposta sob suspeita",
           "min": "10 min",
           "texto": "Depois de uma resposta importante, use o modelo da dica 5.",
-          "pronto": "você conferiu numa fonte oficial o ponto que a revisão apontou e anotou se estava certo."
+          "pronto": "você conferiu numa fonte oficial o ponto que a revisêo apontou e anotou se estava certo."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "A conversa ficou enorme e a IA começou a esquecer o combinado. O que fazer?",
@@ -175,7 +175,7 @@
         {
           "p": "Por que instruções personalizadas devem ser curtas?",
           "opcoes": [
-            "Porque vão junto em todo envio, dentro do pacote.",
+            "Porque vêo junto em todo envio, dentro do pacote.",
             "Porque o app cobra cada palavra das instruções na sua fatura do mês.",
             "Porque o classificador de segurança barra instruções com mais de dez linhas.",
             "Porque o modelo só lê a primeira linha."
@@ -189,11 +189,11 @@
           "opcoes": [
             "\"Qual é o valor?\", sem mais nada.",
             "\"Pesquise na web e mostre o link e a data da fonte.\"",
-            "\"Responda com toda a certeza e sem dizer que não sabe.\"",
+            "\"Responda com toda a certeza e sem dizer que nêo sabe.\"",
             "\"Use a sua memória e o que você aprendeu no treino.\""
           ],
           "certa": 1,
-          "explica": "Fato atual pede busca com fonte. Sem ferramenta, o modelo completa com o mais provável, e pedir \"certeza\" não muda o cálculo.",
+          "explica": "Fato atual pede busca com fonte. Sem ferramenta, o modelo completa com o mais provável, e pedir \"certeza\" nêo muda o cálculo.",
           "ref": "codigo"
         },
         {
@@ -205,7 +205,7 @@
             "Que o resultado veio do data center mais rápido, com a GPU mais nova."
           ],
           "certa": 2,
-          "explica": "Tom confiante não é prova. Números chegam picados ao modelo e ele escolhe o mais provável. Conta importante: ferramenta ou conferência.",
+          "explica": "Tom confiante nêo é prova. Números chegam picados ao modelo e ele escolhe o mais provável. Conta importante: ferramenta ou conferência.",
           "ref": "diagrama"
         }
       ]
@@ -224,10 +224,10 @@
         },
         {
           "t": "Um token por vez (etapa 6)",
-          "texto": "Provável não é certo: resposta confiante, você confere."
+          "texto": "Provável nêo é certo: resposta confiante, você confere."
         },
         {
-          "t": "Decisão (etapa 7)",
+          "t": "Decisêo (etapa 7)",
           "texto": "Fato atual: peça busca e fonte, e abra o link."
         }
       ]

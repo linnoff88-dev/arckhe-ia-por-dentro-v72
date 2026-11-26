@@ -5,7 +5,7 @@
   "titulo": "Etapa 3: palavras viram tokens",
   "titulo_curto": "3 · Tokens",
   "minutos": 15,
-  "lead": "O modelo não lê palavras nem letras: lê tokens, pedaços um pouco menores que uma palavra. Isso explica por que a IA errava ao contar letras, por que erra conta e por que o português gasta mais que o inglês.",
+  "lead": "O modelo nêo lê palavras nem letras: lê tokens, pedaços um pouco menores que uma palavra. Isso explica por que a IA errava ao contar letras, por que erra conta e por que o português gasta mais que o inglês.",
   "objetivo": "mostrar como uma frase vira tokens e explicar dois erros que nascem disso: contar letras e fazer conta.",
   "competencias": [
     "explicar-tokens",
@@ -13,7 +13,7 @@
   ],
   "aprende": [
     {
-      "t": "O que é token e quem faz a conversão (o tokenizer)"
+      "t": "O que é token e quem faz a conversêo (o tokenizer)"
     },
     {
       "t": "Por que strawberry vira três pedaços"
@@ -42,7 +42,7 @@
               "t": "strawberry"
             }
           ],
-          "detalhe": "O pacote da etapa 1 é texto. Mas o modelo não trabalha com texto direto."
+          "detalhe": "O pacote da etapa 1 é texto. Mas o modelo nêo trabalha com texto direto."
         },
         {
           "icone": "camadas",
@@ -67,7 +67,7 @@
           "icone": "cerebro",
           "titulo": "Modelo",
           "sub": "vê pedaços",
-          "detalhe": "O modelo recebe os pedaços, não as letras. Por isso, até pouco tempo atrás, errava ao contar quantas letras R tem em strawberry."
+          "detalhe": "O modelo recebe os pedaços, nêo as letras. Por isso, até pouco tempo atrás, errava ao contar quantas letras R tem em strawberry."
         }
       ],
       "legenda": "Cada tokenizer pica de um jeito. Os exemplos desta aula usam o da OpenAI."
@@ -124,7 +124,7 @@
             "105",
             "62"
           ],
-          "nota": "O número não entra inteiro: vira quatro blocos. O modelo nunca vê o número de uma vez, e é por isso que a IA erra conta."
+          "nota": "O número nêo entra inteiro: vira quatro blocos. O modelo nunca vê o número de uma vez, e é por isso que a IA erra conta."
         },
         {
           "rot": "hello world",
@@ -145,7 +145,7 @@
             "े",
             " दुनिया"
           ],
-          "nota": "A mesma saudação em hindi: cinco tokens. O inglês é uma das línguas mais econômicas, e é por isso que a maioria dos modelos pensa em inglês por padrão."
+          "nota": "A mesma saudaçêo em hindi: cinco tokens. O inglês é uma das línguas mais econômicas, e é por isso que a maioria dos modelos pensa em inglês por padrêo."
         },
         {
           "rot": "Português × inglês",
@@ -189,7 +189,7 @@
           "titulo": "Contar letras",
           "sub": "strawberry",
           "texto": [
-            "O modelo vê st, raw e berry, não s-t-r-a-w-b-e-r-r-y.",
+            "O modelo vê st, raw e berry, nêo s-t-r-a-w-b-e-r-r-y.",
             "Por isso, até pouco tempo atrás, a IA errava quando você pedia para contar as letras de uma palavra."
           ]
         },
@@ -197,7 +197,7 @@
           "titulo": "Fazer conta",
           "sub": "números picados",
           "texto": [
-            "Números são picados em blocos pela frequência com que aparecem. Um número de onze dígitos vira quatro ou cinco pedaços estranhos.",
+            "Números sêo picados em blocos pela frequência com que aparecem. Um número de onze dígitos vira quatro ou cinco pedaços estranhos.",
             "Sem ver o número inteiro, o modelo erra conta. Para conta importante, peça ferramenta (aula 7)."
           ]
         },
@@ -265,18 +265,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Por que a IA errava ao contar quantas letras R tem em strawberry?",
           "opcoes": [
-            "Porque foi treinado quase só em português e não conhece a palavra em inglês.",
+            "Porque foi treinado quase só em português e nêo conhece a palavra em inglês.",
             "Porque o tokenizer apaga letras repetidas antes de mandar a palavra ao modelo.",
             "Porque conta só as vogais.",
-            "Porque vê a palavra em pedaços (st, raw, berry), não letra por letra."
+            "Porque vê a palavra em pedaços (st, raw, berry), nêo letra por letra."
           ],
           "certa": 3,
-          "explica": "O modelo recebe tokens, não letras. Strawberry chega como três pedaços, e a contagem de letras fica escondida dentro deles.",
+          "explica": "O modelo recebe tokens, nêo letras. Strawberry chega como três pedaços, e a contagem de letras fica escondida dentro deles.",
           "ref": "simtokens"
         },
         {
@@ -296,7 +296,7 @@
           "opcoes": [
             "Porque o número chega picado em blocos, nunca inteiro.",
             "Porque a calculadora do data center é lenta e desiste antes do fim da conta.",
-            "Porque números grandes são barrados pelos classificadores de segurança.",
+            "Porque números grandes sêo barrados pelos classificadores de segurança.",
             "Porque ela arredonda tudo de propósito."
           ],
           "certa": 0,
@@ -306,8 +306,8 @@
         {
           "p": "A mesma frase em português e em inglês: o que acontece com os tokens?",
           "opcoes": [
-            "São sempre iguais.",
-            "O inglês gasta mais, porque as palavras dele são mais longas.",
+            "Sêo sempre iguais.",
+            "O inglês gasta mais, porque as palavras dele sêo mais longas.",
             "O português gastou mais: 17 contra 11 no exemplo medido.",
             "Depende só do tamanho da tela e da fonte que você usa no aparelho."
           ],

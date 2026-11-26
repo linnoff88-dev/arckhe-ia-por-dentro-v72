@@ -5,8 +5,8 @@
   "titulo": "Etapas 4 e 5: a viagem ao data center e o modelo rodando",
   "titulo_curto": "4–5 · Data center",
   "minutos": 15,
-  "lead": "O modelo não mora no seu celular. Os tokens viajam até prédios cheios de chips, dividem a máquina com pedidos de outras pessoas e passam por dezenas de camadas de contas. Não é mágica: é matemática gigante.",
-  "objetivo": "explicar onde o modelo roda, por que a mesma pergunta pode sair diferente e o que a atenção faz com as palavras.",
+  "lead": "O modelo nêo mora no seu celular. Os tokens viajam até prédios cheios de chips, dividem a máquina com pedidos de outras pessoas e passam por dezenas de camadas de contas. Nêo é mágica: é matemática gigante.",
+  "objetivo": "explicar onde o modelo roda, por que a mesma pergunta pode sair diferente e o que a atençêo faz com as palavras.",
   "competencias": [
     "explicar-data-center-e-lote",
     "explicar-atencao"
@@ -19,10 +19,10 @@
       "t": "O lote: por que você divide a GPU com estranhos"
     },
     {
-      "t": "Camadas e atenção: banco com rio, banco com empréstimo"
+      "t": "Camadas e atençêo: banco com rio, banco com empréstimo"
     },
     {
-      "t": "O que são os 175 bilhões de parâmetros do GPT-3"
+      "t": "O que sêo os 175 bilhões de parâmetros do GPT-3"
     }
   ],
   "hero_alt": "Corredor de um data center com fileiras de servidores e luzes verdes; duas pessoas pequenas ao fundo.",
@@ -36,7 +36,7 @@
           "icone": "usuario",
           "titulo": "Seu aparelho",
           "sub": "só envia",
-          "detalhe": "O modelo não roda no seu celular nem no seu computador. O app só manda os tokens e espera a resposta."
+          "detalhe": "O modelo nêo roda no seu celular nem no seu computador. O app só manda os tokens e espera a resposta."
         },
         {
           "icone": "nuvem",
@@ -63,7 +63,7 @@
               "t": "Mais outro…"
             }
           ],
-          "detalhe": "Os chips são, na maioria, GPUs da NVIDIA. O seu pedido não ganha um chip só para ele: entra num lote com o de outras pessoas, para economizar. E o tamanho do lote muda as contas: a mesma pergunta, com a mesma configuração, pode sair diferente."
+          "detalhe": "Os chips sêo, na maioria, GPUs da NVIDIA. O seu pedido nêo ganha um chip só para ele: entra num lote com o de outras pessoas, para economizar. E o tamanho do lote muda as contas: a mesma pergunta, com a mesma configuraçêo, pode sair diferente."
         },
         {
           "icone": "camadas",
@@ -72,7 +72,7 @@
           "itens": [
             {
               "icone": "lupa",
-              "t": "Atenção",
+              "t": "Atençêo",
               "sub": "olha tudo junto"
             },
             {
@@ -80,7 +80,7 @@
               "t": "Bilhões de números"
             }
           ],
-          "detalhe": "Os tokens passam por dezenas, às vezes centenas de camadas de operações matemáticas, como uma equação gigante com muitas variáveis."
+          "detalhe": "Os tokens passam por dezenas, às vezes centenas de camadas de operações matemáticas, como uma equaçêo gigante com muitas variáveis."
         }
       ],
       "legenda": "Etapa 4 é a viagem até a GPU; etapa 5 é o modelo rodando lá dentro."
@@ -95,15 +95,15 @@
           "sub": "contas em sequência",
           "texto": [
             "Cada camada pega o resultado da anterior e faz mais contas.",
-            "Pense numa equação gigante, com muitas e muitas variáveis."
+            "Pense numa equaçêo gigante, com muitas e muitas variáveis."
           ]
         },
         {
-          "titulo": "Atenção",
+          "titulo": "Atençêo",
           "sub": "Google, 2017",
           "texto": [
             "Quase tudo isso vem de um artigo do Google de 2017, <i>Attention Is All You Need</i>.",
-            "A atenção deixa o modelo olhar todas as palavras do texto ao mesmo tempo para entender o sentido de cada uma."
+            "A atençêo deixa o modelo olhar todas as palavras do texto ao mesmo tempo para entender o sentido de cada uma."
           ],
           "exemplo": {
             "rot": "Banco",
@@ -130,7 +130,7 @@
     },
     {
       "tipo": "codigo",
-      "titulo": "Teste a atenção e o lote",
+      "titulo": "Teste a atençêo e o lote",
       "sub": "Dois prompts para a prática.",
       "blocos": [
         {
@@ -182,7 +182,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Onde o modelo roda quando você usa o app no celular?",
@@ -197,7 +197,7 @@
           "ref": "diagrama"
         },
         {
-          "p": "Por que a mesma pergunta pode sair diferente mesmo com a mesma configuração?",
+          "p": "Por que a mesma pergunta pode sair diferente mesmo com a mesma configuraçêo?",
           "opcoes": [
             "Porque o modelo fica cansado.",
             "Porque o seu pedido divide a GPU num lote, e o tamanho do lote muda as contas.",
@@ -209,10 +209,10 @@
           "ref": "passos"
         },
         {
-          "p": "O que a atenção faz?",
+          "p": "O que a atençêo faz?",
           "opcoes": [
             "Deixa o modelo olhar todas as palavras juntas para entender o sentido de cada uma.",
-            "Faz o modelo ler o texto mais devagar, uma palavra de cada vez, para não errar.",
+            "Faz o modelo ler o texto mais devagar, uma palavra de cada vez, para nêo errar.",
             "Avisa quando você está distraído.",
             "Escolhe o data center mais próximo."
           ],

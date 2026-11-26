@@ -58,11 +58,11 @@
             },
             {
               "icone": "usuario",
-              "t": "Versão protegida",
+              "t": "Versêo protegida",
               "sub": "menores de 18"
             }
           ],
-          "detalhe": "A OpenAI faz assim: se achar o pedido arriscado, manda para outro modelo, mais cauteloso. E quem tem menos de 18 anos vai para uma versão mais protegida."
+          "detalhe": "A OpenAI faz assim: se achar o pedido arriscado, manda para outro modelo, mais cauteloso. E quem tem menos de 18 anos vai para uma versêo mais protegida."
         },
         {
           "icone": "cerebro",
@@ -71,7 +71,7 @@
           "detalhe": "Só depois da checagem o pedido segue para o modelo que vai responder. Se foi barrado, você recebe uma recusa."
         }
       ],
-      "legenda": "Goste ou não, é assim que os grandes apps funcionam hoje."
+      "legenda": "Goste ou nêo, é assim que os grandes apps funcionam hoje."
     },
     {
       "tipo": "passos",
@@ -102,20 +102,20 @@
           "sub": "menos de 1%",
           "texto": [
             "O que antes custava caro hoje custa menos de 1% do que custa rodar o modelo.",
-            "Por isso a checagem virou padrão: é barata perto do resto."
+            "Por isso a checagem virou padrêo: é barata perto do resto."
           ]
         }
       ]
     },
     {
       "tipo": "codigo",
-      "titulo": "Pergunte ao app quais são as regras",
+      "titulo": "Pergunte ao app quais sêo as regras",
       "sub": "Cole no app que você usa e depois confira na fonte oficial.",
       "blocos": [
         {
           "rot": "Prompt · as regras do app",
           "icone": "escudo",
-          "conteudo": "Quais tipos de pedido você não atende?\nListe em até 5 tópicos curtos e, no fim, diga onde fica a política de uso oficial da empresa que faz você (nome da página e endereço).\nNão invente o endereço: se não souber, diga que não sabe."
+          "conteudo": "Quais tipos de pedido você nêo atende?\nListe em até 5 tópicos curtos e, no fim, diga onde fica a política de uso oficial da empresa que faz você (nome da página e endereço).\nNêo invente o endereço: se nêo souber, diga que nêo sabe."
         }
       ],
       "saida": {
@@ -123,11 +123,11 @@
         "abas": [
           {
             "rot": "Como conferir",
-            "html": "<ol><li>Abra a política de uso oficial (procure por \"usage policy\" no site da empresa).</li><li>Ache lá pelo menos dois itens da lista que o app deu.</li><li>Se o endereço que ele deu não abrir, anote: é um exemplo de resposta confiante e errada.</li></ol>"
+            "html": "<ol><li>Abra a política de uso oficial (procure por \"usage policy\" no site da empresa).</li><li>Ache lá pelo menos dois itens da lista que o app deu.</li><li>Se o endereço que ele deu nêo abrir, anote: é um exemplo de resposta confiante e errada.</li></ol>"
           },
           {
             "rot": "Erro comum",
-            "html": "<p>Achar que a recusa é \"opinião\" do modelo naquele momento. Muitas vezes quem barrou foi a checagem, antes de o modelo grande ler o pedido.</p>"
+            "html": "<p>Achar que a recusa é \"opiniêo\" do modelo naquele momento. Muitas vezes quem barrou foi a checagem, antes de o modelo grande ler o pedido.</p>"
           }
         ]
       }
@@ -149,7 +149,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "O que é um classificador de segurança?",
@@ -160,7 +160,7 @@
             "A parte do modelo grande que escreve a resposta."
           ],
           "certa": 1,
-          "explica": "São modelos menores que acompanham a conversa com o modelo grande. Não é gente lendo, e não é o modelo que responde.",
+          "explica": "Sêo modelos menores que acompanham a conversa com o modelo grande. Nêo é gente lendo, e nêo é o modelo que responde.",
           "ref": "diagrama"
         },
         {
@@ -172,7 +172,7 @@
             "Zeraram de vez."
           ],
           "certa": 0,
-          "explica": "Com o primeiro classificador, as tentativas bem-sucedidas caíram de quase 90% para uns 5%. Não zeraram: a checagem reduz o risco, não elimina.",
+          "explica": "Com o primeiro classificador, as tentativas bem-sucedidas caíram de quase 90% para uns 5%. Nêo zeraram: a checagem reduz o risco, nêo elimina.",
           "ref": "passos"
         },
         {
@@ -184,7 +184,7 @@
             "Volta para você reescrever com palavras mais suaves antes de seguir."
           ],
           "certa": 2,
-          "explica": "O pedido é desviado para um modelo mais cauteloso. E quem tem menos de 18 anos vai para uma versão mais protegida.",
+          "explica": "O pedido é desviado para um modelo mais cauteloso. E quem tem menos de 18 anos vai para uma versêo mais protegida.",
           "ref": "diagrama"
         }
       ]

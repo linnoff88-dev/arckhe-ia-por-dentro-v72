@@ -1,7 +1,7 @@
 {
   "slug": "visao-geral",
   "num": 1,
-  "menu": "Visão geral",
+  "menu": "Visêo geral",
   "titulo": "A viagem de uma mensagem em 7 etapas",
   "titulo_curto": "As 7 etapas",
   "minutos": 12,
@@ -45,7 +45,7 @@
           "icone": "camadas",
           "titulo": "Tokens",
           "sub": "etapa 3",
-          "detalhe": "O texto é picado em tokens, pedaços um pouco menores que uma palavra. O modelo não vê letras, vê pedaços."
+          "detalhe": "O texto é picado em tokens, pedaços um pouco menores que uma palavra. O modelo nêo vê letras, vê pedaços."
         },
         {
           "icone": "nuvem",
@@ -58,7 +58,7 @@
           "titulo": "Modelo",
           "sub": "etapa 5",
           "forte": true,
-          "detalhe": "Os tokens passam por dezenas de camadas de contas. A atenção deixa o modelo olhar todas as palavras ao mesmo tempo para entender o sentido de cada uma."
+          "detalhe": "Os tokens passam por dezenas de camadas de contas. A atençêo deixa o modelo olhar todas as palavras ao mesmo tempo para entender o sentido de cada uma."
         },
         {
           "icone": "fila",
@@ -68,7 +68,7 @@
         },
         {
           "icone": "portao",
-          "titulo": "Decisão",
+          "titulo": "Decisêo",
           "sub": "etapa 7",
           "detalhe": "Depois de um trecho, o modelo decide: parar, raciocinar mais ou usar uma ferramenta, como a busca na web. Com o resultado, decide de novo."
         }
@@ -78,8 +78,8 @@
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "As 7 etapas juntas",
-        "texto": "Empacotada, checada, picada em tokens, levada ao data center, processada pelo modelo, devolvida um token por vez e, no fim, a decisão: parar, pensar mais ou usar uma ferramenta.",
-        "curto": "Pacote, checagem, tokens, viagem, modelo, um token por vez, decisão."
+        "texto": "Empacotada, checada, picada em tokens, levada ao data center, processada pelo modelo, devolvida um token por vez e, no fim, a decisêo: parar, pensar mais ou usar uma ferramenta.",
+        "curto": "Pacote, checagem, tokens, viagem, modelo, um token por vez, decisêo."
       }
     },
     {
@@ -116,7 +116,7 @@
           "sub": "3,2 quatrilhões",
           "texto": [
             "Hoje, mais de 3,2 quatrilhões de tokens por mês: sete vezes mais em um ano e umas 330 vezes mais em dois.",
-            "E só o ChatGPT é usado por mais de um bilhão de pessoas toda semana."
+            "E só o ChatGPT é usado por mais de um bilhêo de pessoas toda semana."
           ],
           "exemplo": {
             "rot": "A conta",
@@ -127,13 +127,13 @@
     },
     {
       "tipo": "codigo",
-      "titulo": "O cartão de bolso das 7 etapas",
+      "titulo": "O cartêo de bolso das 7 etapas",
       "sub": "Copie, cole no celular ou imprima. É a cola da prática abaixo.",
       "blocos": [
         {
-          "rot": "Cartão · as 7 etapas",
+          "rot": "Cartêo · as 7 etapas",
           "icone": "lista",
-          "conteudo": "1. EMPACOTADA  – o app junta prompt de sistema, instruções, memórias, arquivos e a conversa inteira\n2. CHECADA     – classificadores leem tudo e podem barrar ou desviar o pedido\n3. TOKENS      – o texto vira pedaços (~70% de uma palavra cada)\n4. VIAGEM      – os tokens vão até um data center e entram num lote com outros pedidos\n5. MODELO      – dezenas de camadas de contas; a atenção olha todas as palavras juntas\n6. UM TOKEN    – cada passada gera um pedaço, o mais provável; depois roda tudo de novo\n7. DECISÃO     – parar, raciocinar mais ou usar uma ferramenta (e decidir de novo)"
+          "conteudo": "1. EMPACOTADA  – o app junta prompt de sistema, instruções, memórias, arquivos e a conversa inteira\n2. CHECADA     – classificadores leem tudo e podem barrar ou desviar o pedido\n3. TOKENS      – o texto vira pedaços (~70% de uma palavra cada)\n4. VIAGEM      – os tokens vêo até um data center e entram num lote com outros pedidos\n5. MODELO      – dezenas de camadas de contas; a atençêo olha todas as palavras juntas\n6. UM TOKEN    – cada passada gera um pedaço, o mais provável; depois roda tudo de novo\n7. DECISêO     – parar, raciocinar mais ou usar uma ferramenta (e decidir de novo)"
         }
       ],
       "saida": {
@@ -141,7 +141,7 @@
         "abas": [
           {
             "rot": "Como usar",
-            "html": "<ol><li>Leia o cartão uma vez em voz alta.</li><li>Feche e tente dizer as 7 etapas na ordem.</li><li>Abra e confira o que faltou.</li></ol>"
+            "html": "<ol><li>Leia o cartêo uma vez em voz alta.</li><li>Feche e tente dizer as 7 etapas na ordem.</li><li>Abra e confira o que faltou.</li></ol>"
           },
           {
             "rot": "Erro comum",
@@ -159,8 +159,8 @@
           "id": "e1",
           "titulo": "E1 · As 7 etapas sem olhar",
           "min": "10 min",
-          "texto": "Leia o cartão de bolso, feche e diga (ou escreva) as 7 etapas na ordem, com uma frase sobre cada uma.",
-          "pronto": "você disse as 7 etapas na ordem certa sem abrir o cartão, e conferiu depois."
+          "texto": "Leia o cartêo de bolso, feche e diga (ou escreva) as 7 etapas na ordem, com uma frase sobre cada uma.",
+          "pronto": "você disse as 7 etapas na ordem certa sem abrir o cartêo, e conferiu depois."
         },
         {
           "id": "e2",
@@ -174,7 +174,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Qual é a primeira coisa que acontece depois que você aperta enviar?",
@@ -194,10 +194,10 @@
             "Cerca de 7 vezes.",
             "Cerca de 2 vezes.",
             "Cerca de 330 vezes.",
-            "Não cresceu."
+            "Nêo cresceu."
           ],
           "certa": 0,
-          "explica": "De cerca de 480 trilhões para mais de 3,2 quatrilhões por mês: sete vezes em 12 meses. As 330 vezes são em 24 meses, desde 2024.",
+          "explica": "De cerca de 480 trilhões para mais de 3,2 quatrilhões por mês: sete vezes em 12 meses. As 330 vezes sêo em 24 meses, desde 2024.",
           "ref": "passos"
         },
         {
@@ -209,7 +209,7 @@
             "Se a conversa é guardada na memória."
           ],
           "certa": 1,
-          "explica": "A etapa 7 é a bifurcação: parar, raciocinar ou usar ferramenta. A escolha do data center e a contagem de tokens acontecem antes e não são decisão do modelo.",
+          "explica": "A etapa 7 é a bifurcaçêo: parar, raciocinar ou usar ferramenta. A escolha do data center e a contagem de tokens acontecem antes e nêo sêo decisêo do modelo.",
           "ref": "diagrama"
         }
       ]
@@ -220,7 +220,7 @@
       "itens": [
         {
           "t": "O caminho",
-          "texto": "Pacote, checagem, tokens, viagem, modelo, um token por vez, decisão."
+          "texto": "Pacote, checagem, tokens, viagem, modelo, um token por vez, decisêo."
         },
         {
           "t": "A escala",
